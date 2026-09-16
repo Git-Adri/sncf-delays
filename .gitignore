@@ -5,6 +5,7 @@
 dbt/profiles.yml
 *.pem
 credentials.json
+GIT.md
 
 # Python
 __pycache__/
