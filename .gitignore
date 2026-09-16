@@ -1,0 +1,60 @@
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+dbt/profiles.yml
+*.pem
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Airflow
+airflow/logs/
+airflow/plugins/__pycache__/
+airflow.db
+standalone_admin_password.txt
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform.lock.hcl
+
+# Données locales (ne jamais committer)
+data/
+*.parquet
+*.duckdb
+*.csv
+!tests/fixtures/*.json
+
+# Modèles entraînés
+ml/artifacts/
+*.pkl
+*.joblib
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# OS
+.DS_Store
+Thumbs.db

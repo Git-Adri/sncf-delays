@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: raw
+    description: >
+      Tables alimentées par le loader depuis les snapshots S3.
+      Une ligne par observation d'un train à une gare à un instant donné.
+      Contient des doublons par construction : c'est la couche silver qui
+      les résorbe.
+    schema: raw
+    tables:
+      - name: departures_snapshot
+        description: Snapshots bruts des départs.
+        columns:
+          - name: collected_at
+            description: Horodatage UTC de la collecte. Clé de l'évolution temporelle.
+            tests:
+              - not_null
+          - name: station_slug
+            tests:
+              - not_null
+      - name: arrivals_snapshot
+        description: Snapshots bruts des arrivées.
