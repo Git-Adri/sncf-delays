@@ -109,6 +109,41 @@ coûtent moins de 50 centimes par mois.
 n'a besoin de tourner en continu. Airflow demande à lui seul ~2 Go de RAM,
 incompatible avec toute instance gratuite.
 
+## Langages
+
+| Usage | Langage |
+|---|---|
+| Collecte, chargement, ML | Python |
+| Transformations dbt | SQL |
+| Infrastructure | HCL (Terraform) |
+
+En volume, le SQL sera probablement la partie la plus dense du projet.
+
+### Justification
+
+Python est le standard de l'écosystème data visé : les DAG Airflow *sont* du
+code Python, dbt est un outil Python, boto3 pour AWS, et scikit-learn n'a pas
+d'équivalent sérieux ailleurs. Sur Lambda, les cold starts Python sont aussi
+nettement meilleurs que ceux de la JVM.
+
+C'est également ce que demandent les offres visées, qui placent Python et SQL
+en tête des compétences attendues.
+
+### Note importante
+
+L'expérience professionnelle de la personne est en **Java** (Spark, Kafka,
+Flink chez Thales). Ce n'est pas un handicap mais un atout : Java et Scala
+restent dominants sur les gros traitements distribués, et maîtriser les deux
+distingue des profils purement Python. Ce point ne doit pas être minimisé sous
+prétexte que le projet personnel est en Python.
+
+Si la brique Kafka de démonstration est ajoutée, un consumer Flink en Java
+serait l'endroit naturel pour valoriser cette expérience et éviter un projet
+mono-langage. Optionnel, et source de complexité.
+
+Ce choix n'avait pas été discuté explicitement : il a été posé par défaut lors
+de l'écriture du squelette, puis validé après coup.
+
 ### Sur Kafka
 
 Kafka figurait dans l'architecture initiale puis a été retiré. Pour un
