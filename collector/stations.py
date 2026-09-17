@@ -1,17 +1,13 @@
 """Référentiel des gares surveillées.
 
-ATTENTION : les identifiants ci-dessous sont des valeurs à VERIFIER contre
-l'API avant toute utilisation. Le format des stop_area SNCF est
-`stop_area:SNCF:87XXXXX` où 87XXXXX est le code UIC de la gare.
+Les codes UIC ci-dessous ont été résolus contre l'API et validés dans
+`notebooks/01_explore_api.ipynb` (étape 1). Le format des stop_area SNCF est
+`stop_area:SNCF:87XXXXXX` où 87XXXXXX est le code UIC à 8 chiffres de la
+gare.
 
-Pour récupérer l'identifiant réel d'une gare :
-
-    GET https://api.sncf.com/v1/coverage/sncf/places?q=Bordeaux+Saint-Jean
-
-puis filtrer les résultats dont `embedded_type == "stop_area"`.
-
-Le script `scripts/resolve_stations.py` (à écrire) automatisera cette
-résolution et mettra ce fichier à jour.
+`scripts/resolve_stations.py` automatise cette résolution : il compare les
+codes déclarés ici à ceux renvoyés par l'endpoint `places` de l'API et
+signale les écarts, si SNCF venait à changer un identifiant.
 """
 
 from dataclasses import dataclass
@@ -28,7 +24,7 @@ class Station:
     """Nom lisible."""
 
     uic: str
-    """Code UIC à 7 chiffres. A VERIFIER contre l'API."""
+    """Code UIC à 8 chiffres, résolu contre l'API (voir `scripts/resolve_stations.py`)."""
 
     corridor_position: int
     """Position sur le corridor, d'ouest en est. Sert à ordonner les gares
@@ -49,12 +45,12 @@ class Station:
 
 
 # Corridor transversale sud, ordonné d'ouest en est.
-# Les codes UIC sont des valeurs de départ A VERIFIER.
+# Codes UIC résolus contre l'API (voir scripts/resolve_stations.py).
 STATIONS: tuple[Station, ...] = (
     Station(
         slug="bordeaux_st_jean",
         label="Bordeaux Saint-Jean",
-        uic="8758100",
+        uic="87581009",
         corridor_position=1,
         is_origin_hub=True,
         is_terminus_reversal=False,
@@ -62,7 +58,7 @@ STATIONS: tuple[Station, ...] = (
     Station(
         slug="toulouse_matabiau",
         label="Toulouse Matabiau",
-        uic="8761100",
+        uic="87611004",
         corridor_position=2,
         is_origin_hub=True,
         is_terminus_reversal=False,
@@ -70,7 +66,7 @@ STATIONS: tuple[Station, ...] = (
     Station(
         slug="montpellier_st_roch",
         label="Montpellier Saint-Roch",
-        uic="8768600",
+        uic="87773002",
         corridor_position=3,
         is_origin_hub=False,
         is_terminus_reversal=False,
@@ -78,7 +74,7 @@ STATIONS: tuple[Station, ...] = (
     Station(
         slug="marseille_st_charles",
         label="Marseille Saint-Charles",
-        uic="8775100",
+        uic="87751008",
         corridor_position=4,
         is_origin_hub=False,
         is_terminus_reversal=True,
@@ -86,7 +82,7 @@ STATIONS: tuple[Station, ...] = (
     Station(
         slug="antibes",
         label="Antibes",
-        uic="8775500",
+        uic="87757674",
         corridor_position=5,
         is_origin_hub=False,
         is_terminus_reversal=False,

@@ -70,7 +70,7 @@ class SncfClient:
 
     def search_places(self, query: str) -> dict[str, Any]:
         """Recherche d'un lieu par nom. Sert à résoudre les codes UIC des gares."""
-        return self._get("places", {"q": query})
+        return self._get("places", {"q": query, "type[]": ["stop_area"]})
 
     def departures(self, stop_area: str, count: int = DEFAULT_COUNT) -> dict[str, Any]:
         """Prochains départs d'une zone d'arrêt, avec données temps réel.

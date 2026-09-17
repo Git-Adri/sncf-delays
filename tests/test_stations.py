@@ -20,7 +20,7 @@ def test_positions_corridor_ordonnees_et_contigues():
 def test_codes_uic_bien_formes():
     for station in STATIONS:
         assert station.uic.isdigit(), station.slug
-        assert len(station.uic) == 7, station.slug
+        assert len(station.uic) == 8, station.slug
         assert station.uic.startswith("87"), station.slug
 
 
