@@ -41,6 +41,7 @@ data/
 *.parquet
 *.duckdb
 *.csv
+*.json
 !tests/fixtures/*.json
 
 # Modèles entraînés

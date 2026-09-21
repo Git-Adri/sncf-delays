@@ -51,7 +51,7 @@ def handler(event: dict[str, Any] | None = None, context: Any = None) -> dict[st
             ("arrivals", client.arrivals),
         ):
             try:
-                payload = fetch(station.stop_area)
+                payload = fetch(station.id)
                 written.append(put_snapshot(payload, dataset, station.slug))
             except SncfApiError as exc:
                 # Une gare en échec ne doit pas faire tomber les quatre autres.

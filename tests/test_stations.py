@@ -24,9 +24,9 @@ def test_codes_uic_bien_formes():
         assert station.uic.startswith("87"), station.slug
 
 
-def test_stop_area_au_format_navitia():
+def test_id_au_format_navitia():
     for station in STATIONS:
-        assert station.stop_area == f"stop_area:SNCF:{station.uic}"
+        assert station.id == f"stop_area:SNCF:{station.uic}"
 
 
 def test_marseille_est_le_seul_terminus_a_retournement():

@@ -62,7 +62,7 @@ Le brut n'est jamais perdu : toute couche supérieure est reconstructible.
 
 ```
 collector/          collecte — code déployé sur Lambda
-  stations.py       référentiel des gares (codes UIC À VÉRIFIER)
+  stations.py       référentiel des gares (id résolus, voir scripts/resolve_stations.py)
   sncf_client.py    client API
   storage.py        écriture des snapshots sur S3
   handler.py        point d'entrée Lambda
@@ -98,9 +98,9 @@ Prérequis à obtenir :
 
 - [x] Architecture et périmètre définis
 - [x] Squelette de projet
-- [ ] Clé API obtenue
+- [x] Clé API obtenue
 - [ ] Exploration du format des réponses
-- [ ] Codes UIC des gares vérifiés
+- [x] Id des gares résolus et vérifiés
 - [ ] Schéma de la couche raw
 - [ ] Collecteur fonctionnel en local
 - [ ] Déploiement Lambda
@@ -113,9 +113,6 @@ Plusieurs fonctions lèvent `NotImplementedError` avec un commentaire décrivant
 la logique visée. C'est délibéré : le parsing des réponses de l'API et le
 schéma des tables doivent être écrits **après** avoir observé de vraies
 réponses, pas devinés à partir de la documentation.
-
-Les codes UIC dans `collector/stations.py` sont des valeurs de départ à
-confirmer via l'endpoint `places` de l'API.
 
 ## Kafka
 

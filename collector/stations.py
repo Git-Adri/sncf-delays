@@ -1,7 +1,7 @@
 """Référentiel des gares surveillées.
 
-Les codes UIC ci-dessous ont été résolus contre l'API et validés dans
-`notebooks/01_explore_api.ipynb` (étape 1). Le format des stop_area SNCF est
+Les id ci-dessous ont été résolus contre l'API et validés dans
+`notebooks/01_explore_api.ipynb` (étape 1). Le format des id SNCF est
 `stop_area:SNCF:87XXXXXX` où 87XXXXXX est le code UIC à 8 chiffres de la
 gare.
 
@@ -23,8 +23,10 @@ class Station:
     label: str
     """Nom lisible."""
 
-    uic: str
-    """Code UIC à 8 chiffres, résolu contre l'API (voir `scripts/resolve_stations.py`)."""
+    id: str
+    """Identifiant Navitia de la gare (un stop_area), résolu contre l'API
+    (voir `scripts/resolve_stations.py`). Utilisable tel quel dans les appels
+    `stop_areas/{id}/departures` et `.../arrivals`."""
 
     corridor_position: int
     """Position sur le corridor, d'ouest en est. Sert à ordonner les gares
@@ -39,9 +41,12 @@ class Station:
     une marge de retournement susceptible d'absorber ou d'amplifier le retard."""
 
     @property
-    def stop_area(self) -> str:
-        """Identifiant Navitia de la zone d'arrêt."""
-        return f"stop_area:SNCF:{self.uic}"
+    def uic(self) -> str:
+        """Code UIC à 8 chiffres qui identifie une gare. Contenu à la fin de id: stop_area:SNCF:{uic} """
+        if not self.id:
+            return ""
+
+        return self.id.split(":")[-1]
 
 
 # Corridor transversale sud, ordonné d'ouest en est.
@@ -50,7 +55,7 @@ STATIONS: tuple[Station, ...] = (
     Station(
         slug="bordeaux_st_jean",
         label="Bordeaux Saint-Jean",
-        uic="87581009",
+        id="stop_area:SNCF:87581009",
         corridor_position=1,
         is_origin_hub=True,
         is_terminus_reversal=False,
@@ -58,7 +63,7 @@ STATIONS: tuple[Station, ...] = (
     Station(
         slug="toulouse_matabiau",
         label="Toulouse Matabiau",
-        uic="87611004",
+        id="stop_area:SNCF:87611004",
         corridor_position=2,
         is_origin_hub=True,
         is_terminus_reversal=False,
@@ -66,7 +71,7 @@ STATIONS: tuple[Station, ...] = (
     Station(
         slug="montpellier_st_roch",
         label="Montpellier Saint-Roch",
-        uic="87773002",
+        id="stop_area:SNCF:87773002",
         corridor_position=3,
         is_origin_hub=False,
         is_terminus_reversal=False,
@@ -74,7 +79,7 @@ STATIONS: tuple[Station, ...] = (
     Station(
         slug="marseille_st_charles",
         label="Marseille Saint-Charles",
-        uic="87751008",
+        id="stop_area:SNCF:87751008",
         corridor_position=4,
         is_origin_hub=False,
         is_terminus_reversal=True,
@@ -82,7 +87,7 @@ STATIONS: tuple[Station, ...] = (
     Station(
         slug="antibes",
         label="Antibes",
-        uic="87757674",
+        id="stop_area:SNCF:87757674",
         corridor_position=5,
         is_origin_hub=False,
         is_terminus_reversal=False,

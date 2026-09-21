@@ -4,7 +4,7 @@
 
 Objectifs de ce notebook :
 
-1. Résoudre les codes UIC réels des cinq gares via l'endpoint `places`
+1. Résoudre les id réels des cinq gares via l'endpoint `places`
 2. Appeler `departures` sur une gare et inspecter la structure complète
 3. Vérifier que `data_freshness=realtime` renvoie bien un horaire différent
    de l'horaire théorique quand un train est en retard

@@ -66,6 +66,27 @@ par changement d'état (train, gare, date), on descend sous 0,5 Mo/jour.
 Les snapshots bruts restent archivés sur S3 : le brut n'est jamais perdu et
 toute couche supérieure peut être reconstruite.
 
+## Portée de la v1 : propagation intra-train uniquement
+
+L'hypothèse de propagation suppose au départ que le retard se mesure sur un
+même train, identifié par un id de circulation persistant (`headsign`) d'une
+gare à l'autre. En pratique, la majorité des trajets sur le corridor
+impliquent une correspondance — pas seulement à Marseille (terminus à
+retournement), mais aussi entre les autres gares.
+
+Pour la v1, on se limite volontairement à la propagation **intra-train** :
+deux observations ne sont rapprochées que si elles partagent le même id de
+circulation. Un cas de correspondance ne produit alors simplement aucune
+paire exploitable — pas d'erreur, juste une couverture réduite. La
+propagation par correspondance (le retard d'un train amont qui impacte le
+départ d'un train aval différent) est un axe d'extension explicitement mis
+de côté pour l'instant, pas oublié.
+
+Validé empiriquement dans `notebooks/01_explore_api.ipynb` (étape 4) : le
+champ `headsign` d'une réponse `departures`/`arrivals` sert d'identifiant
+persistant entre deux gares, confirmé via un croisement avec le lien
+`origins` de l'arrivée correspondante à la gare cible.
+
 ## Architecture
 
 ```

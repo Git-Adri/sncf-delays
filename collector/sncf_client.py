@@ -69,7 +69,7 @@ class SncfClient:
     # -- Endpoints ---------------------------------------------------------
 
     def search_places(self, query: str) -> dict[str, Any]:
-        """Recherche d'un lieu par nom. Sert à résoudre les codes UIC des gares."""
+        """Recherche d'une gare par nom. Sert à résoudre les id des gares."""
         return self._get("places", {"q": query, "type[]": ["stop_area"]})
 
     def departures(self, stop_area: str, count: int = DEFAULT_COUNT) -> dict[str, Any]:
@@ -123,6 +123,36 @@ def parse_departures(payload: dict[str, Any], station_slug: str) -> list[dict[st
         "Voir notebooks/01_explore_api.ipynb"
     )
 
+def extract_id_from_places_response(response: dict) -> str | None:
+    """Permet de récupérer l'id stop_area d'une gare à partir de la reponse d'une recherche de gare.
+    Si aucune gare n'est trouvée alors None est renvoyé
+    """
+    try:
+        station_id = response['places'][0]['stop_area']['id']
+
+    except (KeyError, IndexError):
+        logger.warning("Structure de stop area inattendue, id ['places'][0]['stop_area']['id'] introuvable : %s", response)
+        return None
+
+    return station_id
+
+def get_train_id_from_departure(departure: dict) -> str:
+    try:
+        train_nb = departure['display_informations']['headsign']
+    except KeyError:
+        logger.warning("Structure de départ inattendue, headsign ['display_informations']['headsign'] introuvable : %s", departure)
+        return ""
+
+    return train_nb
+
+def get_train_destination_from_departure(departure: dict) -> str:
+    try:
+        destination = departure['display_informations']['direction']
+    except KeyError:
+        logger.warning("Structure de départ inattendue, direction ['display_informations']['direction'] introuvable : %s", departure)
+        return ""
+
+    return destination
 
 def collected_at() -> str:
     """Horodatage de collecte, en UTC et au format ISO 8601.
