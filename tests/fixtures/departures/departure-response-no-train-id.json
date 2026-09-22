@@ -1,0 +1,247 @@
+{
+  "route": {
+    "id": "route:SNCF:FR:Line::6831fb72-94d3-417c-915f-b9656db78b1a:",
+    "name": "F41+",
+    "is_frequence": "False",
+    "direction_type": "forward",
+    "physical_modes": [
+      {
+        "id": "physical_mode:Coach",
+        "name": "Autocar"
+      },
+      {
+        "id": "physical_mode:Train",
+        "name": "TER / Intercités"
+      }
+    ],
+    "direction": {
+      "id": "stop_area:SNCF:87582668",
+      "name": "Arcachon (Arcachon)",
+      "quality": 0,
+      "stop_area": {
+        "id": "stop_area:SNCF:87582668",
+        "name": "Arcachon",
+        "codes": [
+          {
+            "type": "source",
+            "value": "87582668"
+          },
+          {
+            "type": "uic",
+            "value": "87582668"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "label": "Arcachon (Arcachon)",
+        "coord": {
+          "lon": "-1.165323",
+          "lat": "44.658967"
+        },
+        "links": []
+      },
+      "embedded_type": "stop_area"
+    },
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "links": [],
+    "line": {
+      "id": "line:SNCF:FR:Line::6831fb72-94d3-417c-915f-b9656db78b1a:",
+      "name": "F41+",
+      "code": "F41+",
+      "color": "",
+      "text_color": "",
+      "codes": [],
+      "physical_modes": [
+        {
+          "id": "physical_mode:Train",
+          "name": "TER / Intercités"
+        },
+        {
+          "id": "physical_mode:Coach",
+          "name": "Autocar"
+        }
+      ],
+      "commercial_mode": {
+        "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+        "name": "TER NA"
+      },
+      "network": {
+        "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+        "name": "TER NA",
+        "links": []
+      },
+      "opening_time": "053500",
+      "closing_time": "232600",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "links": []
+    }
+  },
+  "stop_point": {
+    "id": "stop_point:SNCF:87581009:Train",
+    "name": "Bordeaux Saint-Jean",
+    "label": "Bordeaux Saint-Jean (Bordeaux)",
+    "coord": {
+      "lon": "-0.556697",
+      "lat": "44.825873"
+    },
+    "links": [],
+    "commercial_modes": [
+      {
+        "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+        "name": "TER NA"
+      }
+    ],
+    "physical_modes": [
+      {
+        "id": "physical_mode:Train",
+        "name": "TER / Intercités",
+        "co2_emission_rate": {
+          "value": 11.9,
+          "unit": "gEC/Km"
+        }
+      }
+    ],
+    "administrative_regions": [
+      {
+        "id": "admin:fr:33063",
+        "name": "Bordeaux",
+        "level": 8,
+        "zip_code": "33000;33800",
+        "label": "Bordeaux (33000-33800)",
+        "insee": "33063",
+        "coord": {
+          "lon": "-0.5800364",
+          "lat": "44.841225"
+        }
+      }
+    ],
+    "stop_area": {
+      "id": "stop_area:SNCF:87581009",
+      "name": "Bordeaux Saint-Jean",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87581009"
+        },
+        {
+          "type": "uic",
+          "value": "87581009"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Bordeaux Saint-Jean (Bordeaux)",
+      "coord": {
+        "lon": "-0.556697",
+        "lat": "44.825873"
+      },
+      "links": [],
+      "administrative_regions": [
+        {
+          "id": "admin:fr:33063",
+          "name": "Bordeaux",
+          "level": 8,
+          "zip_code": "33000;33800",
+          "label": "Bordeaux (33000-33800)",
+          "insee": "33063",
+          "coord": {
+            "lon": "-0.5800364",
+            "lat": "44.841225"
+          }
+        }
+      ]
+    },
+    "equipments": []
+  },
+  "stop_date_time": {
+    "departure_date_time": "20260922T120200",
+    "base_departure_date_time": "20260922T120200",
+    "arrival_date_time": "20260922T115800",
+    "base_arrival_date_time": "20260922T115800",
+    "additional_informations": [],
+    "links": [
+      {
+        "type": "stop_area",
+        "rel": "origins",
+        "category": "origin",
+        "id": "stop_area:SNCF:87582668",
+        "internal": true
+      },
+      {
+        "type": "stop_area",
+        "rel": "terminus",
+        "category": "terminus",
+        "id": "stop_area:SNCF:87584516",
+        "internal": true
+      }
+    ],
+    "data_freshness": "base_schedule"
+  },
+  "display_informations": {
+    "commercial_mode": "TER NA",
+    "network": "TER NA",
+    "direction": "Coutras (Coutras)",
+    "label": "F41+",
+    "color": "",
+    "code": "F41+",
+    "name": "F41+",
+    "links": [
+      {
+        "templated": false,
+        "rel": "origins",
+        "internal": true,
+        "type": "stop_area",
+        "id": "stop_area:SNCF:87582668",
+        "category": "origin"
+      },
+      {
+        "templated": false,
+        "rel": "terminus",
+        "internal": true,
+        "type": "stop_area",
+        "id": "stop_area:SNCF:87584516",
+        "category": "terminus"
+      }
+    ],
+    "text_color": "",
+    "trip_short_name": "866224",
+    "company": "SNCF Voyageurs",
+    "description": "",
+    "physical_mode": "TER / Intercités",
+    "equipments": []
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:SNCF:FR:Line::6831fb72-94d3-417c-915f-b9656db78b1a:"
+    },
+    {
+      "type": "company",
+      "id": "company:SNCF:1187"
+    },
+    {
+      "type": "vehicle_journey",
+      "id": "vehicle_journey:SNCF:2026-09-22:866224:1187:Train"
+    },
+    {
+      "type": "route",
+      "id": "route:SNCF:FR:Line::6831fb72-94d3-417c-915f-b9656db78b1a:"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:"
+    },
+    {
+      "type": "physical_mode",
+      "id": "physical_mode:Train"
+    },
+    {
+      "type": "network",
+      "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:"
+    }
+  ]
+}

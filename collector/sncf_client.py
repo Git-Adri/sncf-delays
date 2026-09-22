@@ -70,6 +70,10 @@ class SncfClient:
 
     def search_places(self, query: str) -> dict[str, Any]:
         """Recherche d'une gare par nom. Sert à résoudre les id des gares."""
+
+        if not query:
+            raise ValueError("query ne peut pas être vide")
+
         return self._get("places", {"q": query, "type[]": ["stop_area"]})
 
     def departures(self, stop_area: str, count: int = DEFAULT_COUNT) -> dict[str, Any]:
@@ -128,29 +132,32 @@ def extract_id_from_places_response(response: dict) -> str | None:
     Si aucune gare n'est trouvée alors None est renvoyé
     """
     try:
-        station_id = response['places'][0]['stop_area']['id']
+        station_id = response['places'][0]['id']
 
     except (KeyError, IndexError):
-        logger.warning("Structure de stop area inattendue, id ['places'][0]['stop_area']['id'] introuvable : %s", response)
+        logger.warning("Structure de stop area inattendue, id ['places'][0]['id'] introuvable : %s", response)
         return None
 
     return station_id
 
-def get_train_id_from_departure(departure: dict) -> str:
+def get_train_id_from_departure(departure: dict) -> str | None:
+    """Permet de récupérer l'id d'un train à partir d'une reponse de departures() parmi la liste retournée.
+    Si aucune id n'est trouvée alors None est renvoyé
+    """
     try:
         train_nb = departure['display_informations']['headsign']
     except KeyError:
         logger.warning("Structure de départ inattendue, headsign ['display_informations']['headsign'] introuvable : %s", departure)
-        return ""
+        return None
 
     return train_nb
 
-def get_train_destination_from_departure(departure: dict) -> str:
+def get_train_destination_from_departure(departure: dict) -> str | None:
     try:
         destination = departure['display_informations']['direction']
     except KeyError:
         logger.warning("Structure de départ inattendue, direction ['display_informations']['direction'] introuvable : %s", departure)
-        return ""
+        return None
 
     return destination
 

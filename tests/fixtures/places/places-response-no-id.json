@@ -1,0 +1,1118 @@
+{
+  "places": [
+    {
+      "name": "Bordeaux Saint-Jean (Bordeaux)",
+      "quality": 0,
+      "embedded_type": "stop_area",
+      "stop_area": {
+        "id": "stop_area:SNCF:87581009",
+        "coord": {
+          "lat": "44.825873",
+          "lon": "-0.556697"
+        },
+        "label": "Bordeaux Saint-Jean (Bordeaux)",
+        "name": "Bordeaux Saint-Jean",
+        "administrative_regions": [
+          {
+            "id": "admin:osm:relation:2456639",
+            "insee": "",
+            "name": "Bordeaux Sud",
+            "label": "Bordeaux Sud",
+            "level": 10,
+            "coord": {
+              "lon": "-0.5584105829133588",
+              "lat": "44.8253100528744"
+            },
+            "zip_code": null
+          },
+          {
+            "id": "admin:fr:33063",
+            "insee": "33063",
+            "name": "Bordeaux",
+            "label": "Bordeaux (33000-33800)",
+            "level": 8,
+            "coord": {
+              "lon": "-0.5800364",
+              "lat": "44.841225"
+            },
+            "zip_code": "33000-33800"
+          },
+          {
+            "id": "admin:osm:relation:7405",
+            "insee": "33",
+            "name": "Gironde",
+            "label": "Gironde",
+            "level": 6,
+            "coord": {
+              "lon": "-0.5800364",
+              "lat": "44.841225"
+            },
+            "zip_code": null
+          },
+          {
+            "id": "admin:osm:relation:3792880",
+            "insee": "75",
+            "name": "Nouvelle-Aquitaine",
+            "label": "Nouvelle-Aquitaine",
+            "level": 4,
+            "coord": {
+              "lon": "-0.5800364",
+              "lat": "44.841225"
+            },
+            "zip_code": null
+          },
+          {
+            "id": "admin:osm:relation:2202162",
+            "insee": "",
+            "name": "France",
+            "label": "France",
+            "level": 2,
+            "coord": {
+              "lon": "2.3483915",
+              "lat": "48.8534951"
+            },
+            "zip_code": null
+          }
+        ],
+        "timezone": "",
+        "commercial_modes": [
+          {
+            "id": "commercial_mode:IC",
+            "name": "Intercités"
+          },
+          {
+            "id": "commercial_mode:OUI",
+            "name": "TGV INOUI"
+          },
+          {
+            "id": "commercial_mode:OUIGO_TC",
+            "name": "OUIGO Train Classique"
+          },
+          {
+            "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA"
+          },
+          {
+            "id": "commercial_mode:TGVOUIGO",
+            "name": "OUIGO"
+          }
+        ],
+        "physical_modes": [
+          {
+            "id": "physical_mode:LongDistanceTrain",
+            "name": "Train grande vitesse"
+          },
+          {
+            "id": "physical_mode:Train",
+            "name": "TER / Intercités"
+          },
+          {
+            "id": "physical_mode:Coach",
+            "name": "Autocar"
+          }
+        ],
+        "comment": null,
+        "codes": [
+          {
+            "type": "source",
+            "value": "87581009"
+          },
+          {
+            "type": "uic",
+            "value": "87581009"
+          }
+        ],
+        "lines": [
+          {
+            "id": "line:SNCF:FR:Line::e27d87a9-efd7-4218-bf71-50601354df88:",
+            "name": "D15",
+            "code": "D15",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::ec925e4f-137a-4761-914a-13d24e9ace87:",
+            "name": "D31",
+            "code": "D31",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::9805a3d4-04d2-4122-9ac6-677255172215:",
+            "name": "D33",
+            "code": "D33",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::a7820377-230e-419a-8573-9d4de08fc44f:",
+            "name": "D44",
+            "code": "D44",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::60a02f18-2eca-4314-bb8f-6933a6768543:",
+            "name": "D45",
+            "code": "D45",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::aae3d4d2-051a-46ec-9044-c2b69b635c88:",
+            "name": "D51",
+            "code": "D51",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::9227d255-a1c8-4de7-b810-923df421bfc7:",
+            "name": "D52",
+            "code": "D52",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::40f9734e-088d-42d9-9e13-c91880169554:",
+            "name": "F41",
+            "code": "F41",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::6831fb72-94d3-417c-915f-b9656db78b1a:",
+            "name": "F41+",
+            "code": "F41+",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::daa8bf5f-7be6-4fbc-ad6a-0d2c30d39013:",
+            "name": "F42",
+            "code": "F42",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::c89f00c3-5bb6-4806-b9a0-44724544e64b:",
+            "name": "F43",
+            "code": "F43",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::e0a06da9-7515-46e3-a790-975f9883185c:",
+            "name": "F44",
+            "code": "F44",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::6973a1d6-1ab5-447c-b47e-d20af934f64d:",
+            "name": "L13",
+            "code": "L13",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::4887f9fc-de66-44ff-a5fe-199a0de1ca9e:",
+            "name": "L15",
+            "code": "L15",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::dac9d85e-6b33-4d12-ac55-f9c9a330c1a0:",
+            "name": "L16",
+            "code": "L16",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::4f784834-828d-4bbf-a65d-d21599ce8dc2:",
+            "name": "L31",
+            "code": "L31",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::fe22a529-93ed-4301-8a97-e1c5e11abfa1:",
+            "name": "L32",
+            "code": "L32",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::de0cc979-c473-4b44-afa3-48079e6337c5:",
+            "name": "L33",
+            "code": "L33",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::3ebed947-d25a-4cb1-ad23-a6db52a6f082:",
+            "name": "L42",
+            "code": "L42",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::e3a8a728-7448-4d91-ab56-5d415d6969f2:",
+            "name": "L44",
+            "code": "L44",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::6660e3b5-b253-43c4-9e58-ece4d79481bf:",
+            "name": "L45",
+            "code": "L45",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::1f093b3e-6e5a-4365-9cd0-e5764b2c7767:",
+            "name": "L51",
+            "code": "L51",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::b8b05af7-0857-4c78-982b-5adcdd0aa039:",
+            "name": "L52",
+            "code": "L52",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:421500",
+            "name": "Bordeaux Saint-Jean - Paris - Montparnasse - Hall 1 & 2",
+            "commercial_mode": {
+              "id": "commercial_mode:OUI",
+              "name": "TGV INOUI"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:OUI",
+              "name": "TGV INOUI"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:433200",
+            "name": "Bordeaux Saint-Jean - Paris - Montparnasse - Hall 1 & 2",
+            "commercial_mode": {
+              "id": "commercial_mode:TGVOUIGO",
+              "name": "OUIGO"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:TGVOUIGO",
+              "name": "OUIGO"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:061300",
+            "name": "Bordeaux Saint-Jean - Strasbourg",
+            "commercial_mode": {
+              "id": "commercial_mode:OUI",
+              "name": "TGV INOUI"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:OUI",
+              "name": "TGV INOUI"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:533200",
+            "name": "Bordeaux Saint-Jean - Tourcoing",
+            "commercial_mode": {
+              "id": "commercial_mode:TGVOUIGO",
+              "name": "OUIGO"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:TGVOUIGO",
+              "name": "OUIGO"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:003100",
+            "name": "Lille Flandres - Bordeaux Saint-Jean",
+            "commercial_mode": {
+              "id": "commercial_mode:OUI",
+              "name": "TGV INOUI"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:OUI",
+              "name": "TGV INOUI"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:591100",
+            "name": "Nantes - Bordeaux Saint-Jean",
+            "commercial_mode": {
+              "id": "commercial_mode:IC",
+              "name": "Intercités"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:IC",
+              "name": "Intercités"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:421400",
+            "name": "Paris - Montparnasse - Hall 1 & 2 - Arcachon",
+            "commercial_mode": {
+              "id": "commercial_mode:OUI",
+              "name": "TGV INOUI"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:OUI",
+              "name": "TGV INOUI"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:421200",
+            "name": "Paris - Montparnasse - Hall 1 & 2 - Bordeaux Saint-Jean",
+            "commercial_mode": {
+              "id": "commercial_mode:OUI",
+              "name": "TGV INOUI"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:OUI",
+              "name": "TGV INOUI"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:421800",
+            "name": "Paris - Montparnasse - Hall 1 & 2 - Bordeaux Saint-Jean",
+            "commercial_mode": {
+              "id": "commercial_mode:OUI",
+              "name": "TGV INOUI"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:OUI",
+              "name": "TGV INOUI"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:421100",
+            "name": "Paris - Montparnasse - Hall 1 & 2 - Hendaye",
+            "commercial_mode": {
+              "id": "commercial_mode:OUI",
+              "name": "TGV INOUI"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:OUI",
+              "name": "TGV INOUI"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:433900",
+            "name": "Paris - Montparnasse - Hall 1 & 2 - Hendaye",
+            "commercial_mode": {
+              "id": "commercial_mode:TGVOUIGO",
+              "name": "OUIGO"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:TGVOUIGO",
+              "name": "OUIGO"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:421300",
+            "name": "Paris - Montparnasse - Hall 1 & 2 - Toulouse Matabiau",
+            "commercial_mode": {
+              "id": "commercial_mode:OUI",
+              "name": "TGV INOUI"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:OUI",
+              "name": "TGV INOUI"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:433500",
+            "name": "Paris - Montparnasse - Hall 1 & 2 - Toulouse Matabiau",
+            "commercial_mode": {
+              "id": "commercial_mode:TGVOUIGO",
+              "name": "OUIGO"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:TGVOUIGO",
+              "name": "OUIGO"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:434200",
+            "name": "Paris Austerlitz - Bordeaux Saint-Jean",
+            "commercial_mode": {
+              "id": "commercial_mode:OUIGO_TC",
+              "name": "OUIGO Train Classique"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:OUIGO_TC",
+              "name": "OUIGO Train Classique"
+            }
+          },
+          {
+            "id": "line:SNCF:CSR:180100",
+            "name": "Toulouse Matabiau - Marseille Saint-Charles",
+            "commercial_mode": {
+              "id": "commercial_mode:IC",
+              "name": "Intercités"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:LongDistanceTrain",
+                "name": "Train grande vitesse"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:IC",
+              "name": "Intercités"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "stop_area:SNCF:87581538",
+      "name": "Caudéran - Mérignac (Bordeaux)",
+      "quality": 0,
+      "embedded_type": "stop_area",
+      "stop_area": {
+        "id": "stop_area:SNCF:87581538",
+        "coord": {
+          "lat": "44.842622",
+          "lon": "-0.627745"
+        },
+        "label": "Caudéran - Mérignac (Bordeaux)",
+        "name": "Caudéran - Mérignac",
+        "administrative_regions": [
+          {
+            "id": "admin:osm:relation:400970",
+            "insee": "",
+            "name": "Caudéran",
+            "label": "Caudéran (33200)",
+            "level": 10,
+            "coord": {
+              "lon": "-0.6175326931586593",
+              "lat": "44.85146381851675"
+            },
+            "zip_code": "33200"
+          },
+          {
+            "id": "admin:fr:33063",
+            "insee": "33063",
+            "name": "Bordeaux",
+            "label": "Bordeaux (33000-33800)",
+            "level": 8,
+            "coord": {
+              "lon": "-0.5800364",
+              "lat": "44.841225"
+            },
+            "zip_code": "33000-33800"
+          },
+          {
+            "id": "admin:osm:relation:7405",
+            "insee": "33",
+            "name": "Gironde",
+            "label": "Gironde",
+            "level": 6,
+            "coord": {
+              "lon": "-0.5800364",
+              "lat": "44.841225"
+            },
+            "zip_code": null
+          },
+          {
+            "id": "admin:osm:relation:3792880",
+            "insee": "75",
+            "name": "Nouvelle-Aquitaine",
+            "label": "Nouvelle-Aquitaine",
+            "level": 4,
+            "coord": {
+              "lon": "-0.5800364",
+              "lat": "44.841225"
+            },
+            "zip_code": null
+          },
+          {
+            "id": "admin:osm:relation:2202162",
+            "insee": "",
+            "name": "France",
+            "label": "France",
+            "level": 2,
+            "coord": {
+              "lon": "2.3483915",
+              "lat": "48.8534951"
+            },
+            "zip_code": null
+          }
+        ],
+        "timezone": "",
+        "commercial_modes": [
+          {
+            "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA"
+          }
+        ],
+        "physical_modes": [
+          {
+            "id": "physical_mode:Train",
+            "name": "TER / Intercités"
+          },
+          {
+            "id": "physical_mode:Coach",
+            "name": "Autocar"
+          }
+        ],
+        "comment": null,
+        "codes": [
+          {
+            "type": "source",
+            "value": "87581538"
+          },
+          {
+            "type": "uic",
+            "value": "87581538"
+          }
+        ],
+        "lines": [
+          {
+            "id": "line:SNCF:FR:Line::daa8bf5f-7be6-4fbc-ad6a-0d2c30d39013:",
+            "name": "F42",
+            "code": "F42",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          },
+          {
+            "id": "line:SNCF:FR:Line::3ebed947-d25a-4cb1-ad23-a6db52a6f082:",
+            "name": "L42",
+            "code": "L42",
+            "commercial_mode": {
+              "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            },
+            "physical_modes": [
+              {
+                "id": "physical_mode:Train",
+                "name": "TER / Intercités"
+              },
+              {
+                "id": "physical_mode:Coach",
+                "name": "Autocar"
+              }
+            ],
+            "network": {
+              "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+              "name": "TER NA"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "id": "beta_endpoint",
+      "message": "This service is under construction. You can help through github.com/hove-io/navitia"
+    }
+  ],
+  "feed_publishers": [
+    {
+      "id": "SNCF:sncf-piv",
+      "license": "Private (unspecified)",
+      "name": "SNCF PIV Production",
+      "url": ""
+    },
+    {
+      "id": "bano",
+      "name": "Base d'Adresses Nationale Ouverte",
+      "license": "ODbL",
+      "url": "http://bano.openstreetmap.fr/data/lisezmoi-bano.txt"
+    },
+    {
+      "id": "osm",
+      "license": "ODbL",
+      "name": "openstreetmap",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ],
+  "context": {
+    "current_datetime": "20260922T120032",
+    "timezone": "Europe/Paris"
+  },
+  "links": [
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+      "templated": true,
+      "rel": "commercial_modes",
+      "type": "commercial_mode"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+      "templated": true,
+      "rel": "stop_areas",
+      "type": "stop_area"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/lines/{lines.id}",
+      "templated": true,
+      "rel": "lines",
+      "type": "lines"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+      "templated": true,
+      "rel": "physical_modes",
+      "type": "physical_modes"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/networks/{network.id}",
+      "templated": true,
+      "rel": "networks",
+      "type": "network"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_modes.id}",
+      "templated": true,
+      "rel": "commercial_modes",
+      "type": "commercial_modes"
+    }
+  ]
+}
