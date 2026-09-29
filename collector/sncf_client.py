@@ -105,16 +105,11 @@ class SncfClient:
 def parse_departures(payload: dict[str, Any], station_slug: str) -> list[dict[str, Any]]:
     """Aplatit une réponse `departures` en lignes exploitables.
 
-    A ECRIRE après exploration du format réel. Les champs attendus, d'après la
-    documentation Navitia, sont à confirmer :
-
       - stop_date_time.base_departure_date_time      horaire théorique
       - stop_date_time.departure_date_time           horaire temps réel
       - display_informations.headsign                numéro de train
-      - display_informations.trip_short_name         numéro commercial
       - display_informations.direction               destination
       - display_informations.commercial_mode         TER, TGV, Intercités
-      - stop_point.id                                identifiant du quai
       - links[].id où type == "disruption"           perturbation associée
 
     Le retard se calcule comme la différence entre l'horaire temps réel et
@@ -122,23 +117,57 @@ def parse_departures(payload: dict[str, Any], station_slug: str) -> list[dict[st
     Navitia renvoie des horaires locaux au format YYYYMMDDTHHMMSS sans
     indicateur de fuseau.
     """
-    raise NotImplementedError(
-        "Ecrire ce parsing après avoir observé de vraies réponses de l'API. "
-        "Voir notebooks/01_explore_api.ipynb"
-    )
+    departures_date_list = []
 
-def extract_id_from_places_response(response: dict) -> str | None:
-    """Permet de récupérer l'id stop_area d'une gare à partir de la reponse d'une recherche de gare.
-    Si aucune gare n'est trouvée alors None est renvoyé
+    try :
+        departures = payload['departures']
+    except KeyError:
+        logger.warning("Structure de de payload inattendue, "
+                       "[departures] introuvable : %s", payload)
+        return departures_date_list
+
+    for departure in departures:
+        departure_data = {
+            "base_departure_date_time": extract_base_departure_date_time_from_departure(departure),
+        "departure_date_time": extract_departure_date_time_from_departure(departure),
+        "headsign": get_train_id_from_departure(departure),
+        "direction": get_train_destination_from_departure(departure),
+        "commercial_mode": extract_commercial_mode_from_departure(departure),
+        "disruption_id" : extract_disruption_id(departure),
+        "departure_station" : station_slug}
+
+        departures_date_list.append(departure_data)
+
+    return departures_date_list
+
+
+def extract_base_departure_date_time_from_departure(departure: dict) -> str | None:
+    """Permet de récupérer, d'un départ unique, l'horaire théorique de départ, sans compter une possible perturbation.
+    Si l'horaire n'est pas trouvée alors None est renvoyé
     """
-    try:
-        station_id = response['places'][0]['id']
 
-    except (KeyError, IndexError):
-        logger.warning("Structure de stop area inattendue, id ['places'][0]['id'] introuvable : %s", response)
+    try:
+        base_departure_time = departure['stop_date_time']['base_departure_date_time']
+    except KeyError:
+        logger.warning("Structure de stop area inattendue, "
+                       "base_departure_date_time ['stop_date_time']['base_departure_date_time'] introuvable : %s", departure)
         return None
 
-    return station_id
+    return base_departure_time
+
+def extract_departure_date_time_from_departure(departure: dict) -> str | None:
+    """Permet de récupérer, d'un départ unique, l'horaire effectif de départ, prend en compte une possible perturbation.
+    Si l'horaire n'est pas trouvée alors None est renvoyé
+    """
+
+    try:
+        departure_time = departure['stop_date_time']['departure_date_time']
+    except KeyError:
+        logger.warning("Structure de stop area inattendue, "
+                       "departure_date_time ['stop_date_time']['departure_date_time'] introuvable : %s", departure)
+        return None
+
+    return departure_time
 
 def get_train_id_from_departure(departure: dict) -> str | None:
     """Permet de récupérer l'id d'un train à partir d'une reponse de departures() parmi la liste retournée.
@@ -161,6 +190,45 @@ def get_train_destination_from_departure(departure: dict) -> str | None:
 
     return destination
 
+def extract_commercial_mode_from_departure(departure: dict) -> str | None:
+    """Permet de récupérer, d'un départ unique, le type de train : TER, TGV, ect...
+    Si le type n'est pas trouvée alors None est renvoyé
+    """
+
+    try:
+        commercial_mode = departure['display_informations']['commercial_mode']
+    except KeyError:
+        logger.warning("Structure de stop area inattendue, "
+                       "commercial_mode ['display_informations']['commercial_mode'] introuvable : %s",
+                       departure)
+        return None
+
+    return commercial_mode
+
+def extract_id_from_places_response(response: dict) -> str | None:
+    """Permet de récupérer l'id stop_area d'une gare à partir de la reponse d'une recherche de gare.
+    Si aucune gare n'est trouvée alors None est renvoyé
+    """
+    try:
+        station_id = response['places'][0]['id']
+
+    except (KeyError, IndexError):
+        logger.warning("Structure de stop area inattendue, id ['places'][0]['id'] introuvable : %s", response)
+        return None
+
+    return station_id
+
+def extract_disruption_id(departure: dict) -> str | None:
+    """Permet de récupérer l'id d'une perturbation s'il y en a une, sinon None"""
+    try :
+        links_list = departure['display_informations']['links']
+        return next((d.get('id') for d in links_list if d.get('type') == "disruption"), None)
+    except KeyError:
+        logger.warning("Structure de stop area inattendue, "
+                       "disruption_id ['display_informations']['links'][x][id] introuvable : %s",
+                       departure)
+        return None
+
 def collected_at() -> str:
     """Horodatage de collecte, en UTC et au format ISO 8601.
 
@@ -168,3 +236,4 @@ def collected_at() -> str:
     l'évolution d'un retard dans le temps à partir des snapshots.
     """
     return datetime.now(timezone.utc).isoformat()
+

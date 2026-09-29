@@ -87,12 +87,69 @@ champ `headsign` d'une réponse `departures`/`arrivals` sert d'identifiant
 persistant entre deux gares, confirmé via un croisement avec le lien
 `origins` de l'arrivée correspondante à la gare cible.
 
+## Sources de collecte : API SNCF + GTFS-RT + SIRI-ET
+
+L'API SNCF (`api.sncf.com`, Navitia) ne remonte pas le temps réel de façon
+fiable pour toutes les régions. Constaté empiriquement le 2026-09-22 : un
+train (headsign `876213`, réseau `liO` / Occitanie) confirmé en retard de 40
+minutes sur le site SNCF affichait `data_freshness: base_schedule` (aucun
+écart) dans la réponse `departures` de `api.sncf.com`, y compris sur deux
+gares du corridor (Montpellier Saint-Roch et Toulouse Matabiau). SNCF
+documente elle-même cette limite : la couverture temps réel nationale n'est
+garantie que pour TGV et IC, pas pour TER — certaines Régions ont leur
+propre système, pas toujours remonté dans l'API SNCF.
+
+Deux flux de [transport.data.gouv.fr](https://transport.data.gouv.fr/datasets/horaires-sncf)
+(SNCF Voyageurs) comblent ce trou, vérifiés séparément sur ce même train
+876213 :
+
+- **`GTFS-RT Trip Updates`** (mis à jour toutes les 2 minutes, trains
+  circulant dans les 60 prochaines minutes) : affichait correctement les 40
+  minutes de retard.
+- **`SIRI-ET Lite`** (Estimated Timetable) : affichait le même retard, et en
+  plus le quai/la voie (`ArrivalPlatformName`/`DeparturePlatformName`),
+  absent de l'API SNCF et de GTFS-RT. Marqué **"version Béta"** par SNCF sur
+  transport.data.gouv.fr — donnée moins mature, pas fiable à 100 % (champ
+  absent sur certains arrêts, y compris Toulouse Matabiau dans notre test).
+
+**Décision** : trois sources, chacune pour ce qu'elle fait bien.
+- L'**API SNCF** reste la source de découverte (résolution des gares,
+  numéro de train, trajet, disruptions) — une API riche pensée pour la
+  recherche par gare, contrairement aux deux flux temps réel qui sont des
+  flux plats nationaux (non interrogeables par gare, filtrage côté client).
+- **GTFS-RT** est la source de retard principale — standard mature, pas de
+  mention beta.
+- **SIRI-ET** est un enrichissement optionnel pour le quai uniquement, en
+  best-effort : s'il est absent ou en échec, ça ne bloque rien. Le cœur de
+  l'hypothèse de propagation ne dépend pas d'un flux que SNCF qualifie
+  elle-même d'instable.
+
+La corrélation entre les trois se fait par le numéro de train (même
+`headsign`/`TrainNumberRef`, présent comme sous-chaîne dans le `trip_id`
+GTFS-RT et dans le `VehicleJourneyRef` SIRI).
+
+Formats et unités à noter, différents entre les trois sources :
+- **GTFS-RT** : protobuf binaire (`gtfs-realtime-bindings`), retard en
+  secondes (`delay`), horaires en timestamp Unix.
+- **SIRI-ET** : XML, horaires en `AimedXxxTime`/`ExpectedXxxTime` (même
+  principe théorique/réel que Navitia, retard à calculer par différence).
+  Attention à deux pièges : les arrêts basculent de `EstimatedCalls`
+  (à venir) vers `RecordedCalls` (déjà passés) au fil du trajet — chercher
+  dans les deux — et certains arrêts ont une entrée dupliquée avec
+  `Cancellation: true` à ignorer.
+- **Navitia** (`api.sncf.com`) : horaires au format `YYYYMMDDTHHMMSS`.
+
 ## Architecture
 
 ```
-API SNCF
-   |
-   v
+API SNCF (Navitia)     GTFS-RT                SIRI-ET (beta,
+résolution gares,       (transport.data.gouv.fr)  optionnel)
+numéro de train,        source de retard          quai/voie
+trajet, disruptions     principale                 en plus
+   |                          |                        |
+   +--------------+-----------+------------------------+
+                   |
+                   v
 AWS Lambda + EventBridge        <- hébergé, tourne en continu
    |
    v

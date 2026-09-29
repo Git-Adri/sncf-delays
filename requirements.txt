@@ -1,6 +1,8 @@
 # Collecte
 requests==2.32.3
 python-dotenv==1.0.1
+gtfs-realtime-bindings==3.0.0
+xmltodict==1.0.4
 
 # Stockage
 boto3==1.35.36

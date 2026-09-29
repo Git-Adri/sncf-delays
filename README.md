@@ -13,9 +13,13 @@ directement, sans reconstruire les correspondances de rames.
 ## Architecture
 
 ```
-API SNCF
-   │
-   ▼
+API SNCF (Navitia)    GTFS-RT                SIRI-ET (beta,
+résolution gares,      (transport.data.gouv.fr)  optionnel)
+numéro de train,       retard, source            quai/voie
+trajet, disruptions    principale                en plus
+      │                       │                        │
+      └───────────┬───────────┴────────────────────────┘
+                   ▼
 AWS Lambda + EventBridge        hébergé — tourne en continu
    │
    ▼
@@ -37,11 +41,28 @@ DuckDB (local) interroge les Parquet S3 sans passer par la base.
 Le détail des décisions et de leurs justifications est dans
 [`docs/CONTEXT.md`](docs/CONTEXT.md).
 
+### Trois sources de collecte
+
+L'API SNCF (`api.sncf.com`, Navitia) sert à résoudre les gares, identifier les
+trains et leur trajet — mais son temps réel n'est pas garanti pour toutes les
+régions : un retard confirmé sur le site SNCF peut apparaître comme
+`data_freshness: base_schedule` (aucun écart) dans sa réponse. Deux flux de
+[transport.data.gouv.fr](https://transport.data.gouv.fr/datasets/horaires-sncf)
+comblent ce trou, chacun pour un usage différent :
+
+- **`GTFS-RT Trip Updates`** — source de retard principale, standard mature.
+- **`SIRI-ET Lite`** — enrichissement optionnel pour le quai/la voie, en
+  best-effort. Marqué "version Béta" par SNCF, donc pas dépendu pour le
+  calcul du retard lui-même.
+
+Détail complet des vérifications et du choix dans
+[`docs/CONTEXT.md`](docs/CONTEXT.md).
+
 ### Pourquoi ce découpage
 
-Seule la collecte est hébergée. L'API SNCF ne permet pas de rejouer le passé :
-chaque minute non collectée est perdue définitivement. C'est la seule brique
-qui ne tolère pas une machine éteinte.
+Seule la collecte est hébergée. Aucune des trois sources ne permet de
+rejouer le passé : chaque minute non collectée est perdue définitivement.
+C'est la seule brique qui ne tolère pas une machine éteinte.
 
 Tout le reste — dbt, Airflow, entraînement — est du traitement aval qui peut
 rattraper son retard. Aucune raison de le payer en continu.
@@ -99,8 +120,10 @@ Prérequis à obtenir :
 - [x] Architecture et périmètre définis
 - [x] Squelette de projet
 - [x] Clé API obtenue
-- [ ] Exploration du format des réponses
+- [ ] Exploration du format des réponses (quota API et `stop_point` restent à vérifier)
 - [x] Id des gares résolus et vérifiés
+- [x] Limite de couverture temps réel de l'API SNCF identifiée (non garantie selon la région) — GTFS-RT retenu comme source de retard, SIRI-ET en enrichissement optionnel pour le quai
+- [ ] Intégration GTFS-RT + SIRI-ET dans le collecteur (corrélation par numéro de train)
 - [ ] Schéma de la couche raw
 - [ ] Collecteur fonctionnel en local
 - [ ] Déploiement Lambda

@@ -42,7 +42,7 @@ data/
 *.duckdb
 *.csv
 *.json
-!tests/fixtures/*.json
+!tests/fixtures/**/*.json
 
 # Modèles entraînés
 ml/artifacts/
