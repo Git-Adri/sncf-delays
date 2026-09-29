@@ -158,10 +158,6 @@
     "equipments": []
   },
   "stop_date_time": {
-    "departure_date_time": "20260922T120200",
-    "base_departure_date_time": "20260922T120200",
-    "arrival_date_time": "20260922T115800",
-    "base_arrival_date_time": "20260922T115800",
     "additional_informations": [],
     "links": [
       {
@@ -182,9 +178,7 @@
     "data_freshness": "base_schedule"
   },
   "display_informations": {
-    "commercial_mode": "TER NA",
     "network": "TER NA",
-    "direction": "Coutras (Coutras)",
     "label": "F41+",
     "color": "",
     "code": "F41+",

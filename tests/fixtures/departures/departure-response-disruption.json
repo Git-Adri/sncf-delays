@@ -1,0 +1,271 @@
+{
+  "route": {
+    "id": "route:stop_area:SNCF:87781104_stop_area:SNCF:87611004",
+    "name": "Narbonne - Toulouse Matabiau",
+    "is_frequence": "False",
+    "direction_type": "forward",
+    "physical_modes": [
+      {
+        "id": "physical_mode:Coach",
+        "name": "Autocar"
+      },
+      {
+        "id": "physical_mode:LongDistanceTrain",
+        "name": "Train grande vitesse"
+      }
+    ],
+    "direction": {
+      "id": "stop_area:SNCF:87611004",
+      "name": "Toulouse Matabiau (Toulouse)",
+      "quality": 0,
+      "stop_area": {
+        "id": "stop_area:SNCF:87611004",
+        "name": "Toulouse Matabiau",
+        "codes": [
+          {
+            "type": "source",
+            "value": "87611004"
+          },
+          {
+            "type": "uic",
+            "value": "87611004"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "label": "Toulouse Matabiau (Toulouse)",
+        "coord": {
+          "lon": "1.453616",
+          "lat": "43.611206"
+        },
+        "links": []
+      },
+      "embedded_type": "stop_area"
+    },
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "links": [],
+    "line": {
+      "id": "line:stop_area:SNCF:87781104_stop_area:SNCF:87611004",
+      "name": "Narbonne - Toulouse Matabiau",
+      "code": "",
+      "color": "000000",
+      "text_color": "FFFFFF",
+      "codes": [],
+      "physical_modes": [
+        {
+          "id": "physical_mode:Coach",
+          "name": "Autocar"
+        },
+        {
+          "id": "physical_mode:LongDistanceTrain",
+          "name": "Train grande vitesse"
+        }
+      ],
+      "commercial_mode": {
+        "id": "commercial_mode:additional_service",
+        "name": "additional service"
+      },
+      "network": {
+        "id": "network:additional_service",
+        "name": "additional service",
+        "links": []
+      },
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "links": []
+    }
+  },
+  "stop_point": {
+    "id": "stop_point:SNCF:87612010:Train",
+    "name": "Montaudran",
+    "label": "Montaudran (Toulouse)",
+    "coord": {
+      "lon": "1.480201",
+      "lat": "43.573691"
+    },
+    "links": [],
+    "commercial_modes": [
+      {
+        "id": "commercial_mode:FR:Branding::d504b7a9-d7b5-4b8d-951e-93edc254e41b:",
+        "name": "liO"
+      },
+      {
+        "id": "commercial_mode:additional_service",
+        "name": "additional service"
+      }
+    ],
+    "physical_modes": [
+      {
+        "id": "physical_mode:Coach",
+        "name": "Autocar",
+        "co2_emission_rate": {
+          "value": 171.0,
+          "unit": "gEC/Km"
+        }
+      },
+      {
+        "id": "physical_mode:LongDistanceTrain",
+        "name": "Train grande vitesse",
+        "co2_emission_rate": {
+          "value": 2.36,
+          "unit": "gEC/Km"
+        }
+      },
+      {
+        "id": "physical_mode:Train",
+        "name": "TER / Intercités",
+        "co2_emission_rate": {
+          "value": 11.9,
+          "unit": "gEC/Km"
+        }
+      }
+    ],
+    "administrative_regions": [
+      {
+        "id": "admin:fr:31555",
+        "name": "Toulouse",
+        "level": 8,
+        "zip_code": "31000;31500",
+        "label": "Toulouse (31000-31500)",
+        "insee": "31555",
+        "coord": {
+          "lon": "1.4442469",
+          "lat": "43.6044622"
+        }
+      }
+    ],
+    "stop_area": {
+      "id": "stop_area:SNCF:87612010",
+      "name": "Montaudran",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87612010"
+        },
+        {
+          "type": "uic",
+          "value": "87612010"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Montaudran (Toulouse)",
+      "coord": {
+        "lon": "1.480201",
+        "lat": "43.573691"
+      },
+      "links": [],
+      "administrative_regions": [
+        {
+          "id": "admin:fr:31555",
+          "name": "Toulouse",
+          "level": 8,
+          "zip_code": "31000;31500",
+          "label": "Toulouse (31000-31500)",
+          "insee": "31555",
+          "coord": {
+            "lon": "1.4442469",
+            "lat": "43.6044622"
+          }
+        }
+      ]
+    },
+    "equipments": []
+  },
+  "stop_date_time": {
+    "departure_date_time": "20260922T191200",
+    "arrival_date_time": "20260922T191100",
+    "additional_informations": [],
+    "links": [
+      {
+        "type": "stop_area",
+        "rel": "origins",
+        "category": "origin",
+        "id": "stop_area:SNCF:87781104",
+        "internal": true
+      },
+      {
+        "type": "stop_area",
+        "rel": "terminus",
+        "category": "terminus",
+        "id": "stop_area:SNCF:87611004",
+        "internal": true
+      }
+    ],
+    "data_freshness": "realtime"
+  },
+  "display_informations": {
+    "commercial_mode": "additional service",
+    "network": "additional service",
+    "direction": "Toulouse Matabiau (Toulouse)",
+    "label": "Narbonne - Toulouse Matabiau",
+    "color": "000000",
+    "code": "",
+    "headsign": "876230",
+    "name": "Narbonne - Toulouse Matabiau",
+    "links": [
+      {
+        "templated": false,
+        "rel": "disruptions",
+        "internal": true,
+        "type": "disruption",
+        "id": "b48ab4dc-4a72-4851-b6a1-a2bfab475d24"
+      },
+      {
+        "templated": false,
+        "rel": "origins",
+        "internal": true,
+        "type": "stop_area",
+        "id": "stop_area:SNCF:87781104",
+        "category": "origin"
+      },
+      {
+        "templated": false,
+        "rel": "terminus",
+        "internal": true,
+        "type": "stop_area",
+        "id": "stop_area:SNCF:87611004",
+        "category": "terminus"
+      }
+    ],
+    "text_color": "FFFFFF",
+    "trip_short_name": "876230",
+    "company": "SNCF Voyageurs",
+    "description": "",
+    "physical_mode": "Train grande vitesse",
+    "equipments": []
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:stop_area:SNCF:87781104_stop_area:SNCF:87611004"
+    },
+    {
+      "type": "company",
+      "id": "company:SNCF:1187"
+    },
+    {
+      "type": "vehicle_journey",
+      "id": "vehicle_journey:PIV:REALTIME:2026-09-22:876230:1187:rail:regionalRail:FERRE:RealTime:17a051a5-3354-4d22-a94b-c5efc4dc067c"
+    },
+    {
+      "type": "route",
+      "id": "route:stop_area:SNCF:87781104_stop_area:SNCF:87611004"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:additional_service"
+    },
+    {
+      "type": "physical_mode",
+      "id": "physical_mode:LongDistanceTrain"
+    },
+    {
+      "type": "network",
+      "id": "network:additional_service"
+    }
+  ]
+}

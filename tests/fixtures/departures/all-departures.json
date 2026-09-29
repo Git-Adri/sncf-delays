@@ -1,0 +1,2422 @@
+{
+  "pagination": {
+    "total_result": 4,
+    "start_page": 0,
+    "items_per_page": 4,
+    "items_on_page": 4
+  },
+  "feed_publishers": [
+    {
+      "id": "sncf",
+      "name": "SNCF PIV Production",
+      "url": "",
+      "license": "Private (unspecified)"
+    },
+    {
+      "id": "SNCF:sncf-piv",
+      "name": "SNCF PIV Production",
+      "url": "",
+      "license": "Private (unspecified)"
+    }
+  ],
+  "disruptions": [
+    {
+      "id": "38db32fe-28e9-432a-b7f3-7ec2b6daaf9c",
+      "disruption_id": "38db32fe-28e9-432a-b7f3-7ec2b6daaf9c",
+      "impact_id": "38db32fe-28e9-432a-b7f3-7ec2b6daaf9c",
+      "application_periods": [
+        {
+          "begin": "20260928T184400",
+          "end": "20260928T213300"
+        }
+      ],
+      "status": "active",
+      "updated_at": "20260928T183304",
+      "cause": "",
+      "severity": {
+        "name": "trip delayed",
+        "effect": "SIGNIFICANT_DELAYS",
+        "color": "#000000",
+        "priority": 42
+      },
+      "messages": [
+        {
+          "text": "Difficulté de gestion du trafic sur le réseau ferré",
+          "channel": {
+            "content_type": "",
+            "id": "rt",
+            "name": "rt",
+            "types": [
+              "web",
+              "mobile"
+            ]
+          }
+        }
+      ],
+      "impacted_objects": [
+        {
+          "pt_object": {
+            "id": "SNCF:2026-09-28:866463:1187:Train",
+            "name": "SNCF:2026-09-28:866463:1187:Train",
+            "quality": 0,
+            "trip": {
+              "id": "SNCF:2026-09-28:866463:1187:Train",
+              "name": "866463"
+            },
+            "embedded_type": "trip"
+          },
+          "impacted_stops": [
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87581009:Train",
+                "name": "Bordeaux Saint-Jean",
+                "label": "Bordeaux Saint-Jean (Bordeaux)",
+                "coord": {
+                  "lon": "-0.556697",
+                  "lat": "44.825873"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "184400",
+              "base_departure_time": "184400",
+              "amended_arrival_time": "185400",
+              "amended_departure_time": "185400",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "unchanged",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87581751:Train",
+                "name": "Pessac",
+                "label": "Pessac (Pessac)",
+                "coord": {
+                  "lon": "-0.631784",
+                  "lat": "44.804621"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "184900",
+              "base_departure_time": "185000",
+              "amended_arrival_time": "185900",
+              "amended_departure_time": "190000",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582478:Train",
+                "name": "Biganos Facture",
+                "label": "Biganos Facture (Biganos)",
+                "coord": {
+                  "lon": "-0.96621",
+                  "lat": "44.637384"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "191000",
+              "base_departure_time": "191100",
+              "amended_arrival_time": "192000",
+              "amended_departure_time": "192100",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582536:Train",
+                "name": "Ychoux",
+                "label": "Ychoux (Ychoux)",
+                "coord": {
+                  "lon": "-0.946335",
+                  "lat": "44.32927"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "192800",
+              "base_departure_time": "192900",
+              "amended_arrival_time": "193800",
+              "amended_departure_time": "193900",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582551:Train",
+                "name": "Labouheyre",
+                "label": "Labouheyre (Labouheyre)",
+                "coord": {
+                  "lon": "-0.920974",
+                  "lat": "44.210613"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "193800",
+              "base_departure_time": "193900",
+              "amended_arrival_time": "194800",
+              "amended_departure_time": "194900",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87673103:Train",
+                "name": "Morcenx",
+                "label": "Morcenx (Morcenx-la-Nouvelle)",
+                "coord": {
+                  "lon": "-0.90864",
+                  "lat": "44.033565"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "195000",
+              "base_departure_time": "195100",
+              "amended_arrival_time": "200000",
+              "amended_departure_time": "200100",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87673202:Train",
+                "name": "Dax",
+                "label": "Dax (Dax)",
+                "coord": {
+                  "lon": "-1.050301",
+                  "lat": "43.720472"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "200900",
+              "base_departure_time": "201200",
+              "amended_arrival_time": "201900",
+              "amended_departure_time": "202200",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87673277:Train",
+                "name": "Saint-Vincent-de-Tyrosse",
+                "label": "Saint-Vincent-de-Tyrosse (Saint-Vincent-de-Tyrosse)",
+                "coord": {
+                  "lon": "-1.306421",
+                  "lat": "43.657803"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "202600",
+              "base_departure_time": "202700",
+              "amended_arrival_time": "203600",
+              "amended_departure_time": "203700",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87673004:Train",
+                "name": "Bayonne",
+                "label": "Bayonne (Bayonne)",
+                "coord": {
+                  "lon": "-1.470368",
+                  "lat": "43.496793"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "204300",
+              "base_departure_time": "204500",
+              "amended_arrival_time": "205300",
+              "amended_departure_time": "205500",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87673400:Train",
+                "name": "Biarritz",
+                "label": "Biarritz (Biarritz)",
+                "coord": {
+                  "lon": "-1.545937",
+                  "lat": "43.459387"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "205300",
+              "base_departure_time": "205400",
+              "amended_arrival_time": "210300",
+              "amended_departure_time": "210400",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87673459:Train",
+                "name": "Guéthary",
+                "label": "Guéthary (Guéthary)",
+                "coord": {
+                  "lon": "-1.609972",
+                  "lat": "43.425238"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "205900",
+              "base_departure_time": "210000",
+              "amended_arrival_time": "210900",
+              "amended_departure_time": "211000",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87677120:Train",
+                "name": "Saint-Jean-de-Luz - Ciboure",
+                "label": "Saint-Jean-de-Luz - Ciboure (Saint-Jean-de-Luz)",
+                "coord": {
+                  "lon": "-1.661181",
+                  "lat": "43.385862"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "210900",
+              "base_departure_time": "211000",
+              "amended_arrival_time": "211900",
+              "amended_departure_time": "212000",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87677104:Train",
+                "name": "Les Deux Jumeaux",
+                "label": "Les Deux Jumeaux (Hendaye)",
+                "coord": {
+                  "lon": "-1.764527",
+                  "lat": "43.370066"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "211900",
+              "base_departure_time": "212000",
+              "amended_arrival_time": "212900",
+              "amended_departure_time": "213000",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87677005:Train",
+                "name": "Hendaye",
+                "label": "Hendaye (Hendaye)",
+                "coord": {
+                  "lon": "-1.781724",
+                  "lat": "43.353132"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "212300",
+              "base_departure_time": "212300",
+              "amended_arrival_time": "213300",
+              "amended_departure_time": "213300",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "unchanged",
+              "arrival_status": "delayed",
+              "is_detour": false
+            }
+          ]
+        }
+      ],
+      "uri": "38db32fe-28e9-432a-b7f3-7ec2b6daaf9c",
+      "disruption_uri": "38db32fe-28e9-432a-b7f3-7ec2b6daaf9c",
+      "contributor": "realtime.sncf.piv"
+    },
+    {
+      "id": "f97bb796-3a87-4314-a8a9-779f9dea9776",
+      "disruption_id": "f97bb796-3a87-4314-a8a9-779f9dea9776",
+      "impact_id": "f97bb796-3a87-4314-a8a9-779f9dea9776",
+      "application_periods": [
+        {
+          "begin": "20260928T175500",
+          "end": "20260928T195000"
+        }
+      ],
+      "status": "active",
+      "updated_at": "20260928T183644",
+      "cause": "",
+      "severity": {
+        "name": "trip delayed",
+        "effect": "SIGNIFICANT_DELAYS",
+        "color": "#000000",
+        "priority": 42
+      },
+      "messages": [
+        {
+          "text": "Difficulté de gestion du trafic sur le réseau ferré",
+          "channel": {
+            "content_type": "",
+            "id": "rt",
+            "name": "rt",
+            "types": [
+              "web",
+              "mobile"
+            ]
+          }
+        }
+      ],
+      "impacted_objects": [
+        {
+          "pt_object": {
+            "id": "SNCF:2026-09-28:866251:1187:Train",
+            "name": "SNCF:2026-09-28:866251:1187:Train",
+            "quality": 0,
+            "trip": {
+              "id": "SNCF:2026-09-28:866251:1187:Train",
+              "name": "866251"
+            },
+            "embedded_type": "trip"
+          },
+          "impacted_stops": [
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87584052:Train",
+                "name": "Libourne",
+                "label": "Libourne (Libourne)",
+                "coord": {
+                  "lon": "-0.236359",
+                  "lat": "44.915904"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "175500",
+              "base_departure_time": "175500",
+              "amended_arrival_time": "180000",
+              "amended_departure_time": "180000",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "unchanged",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87584714:Train",
+                "name": "Vayres",
+                "label": "Vayres (Vayres)",
+                "coord": {
+                  "lon": "-0.317169",
+                  "lat": "44.897326"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "180000",
+              "base_departure_time": "180100",
+              "amended_arrival_time": "180500",
+              "amended_departure_time": "180600",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87584722:Train",
+                "name": "Saint-Sulpice - Izon",
+                "label": "Saint-Sulpice - Izon (Saint-Sulpice-et-Cameyrac)",
+                "coord": {
+                  "lon": "-0.392131",
+                  "lat": "44.914308"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "180500",
+              "base_departure_time": "180600",
+              "amended_arrival_time": "181000",
+              "amended_departure_time": "181100",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87584730:Train",
+                "name": "Saint-Loubès",
+                "label": "Saint-Loubès (Saint-Loubès)",
+                "coord": {
+                  "lon": "-0.433198",
+                  "lat": "44.922266"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "180900",
+              "base_departure_time": "181000",
+              "amended_arrival_time": "181400",
+              "amended_departure_time": "181500",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87584755:Train",
+                "name": "La Gorp",
+                "label": "La Gorp (Ambarès-et-Lagrave)",
+                "coord": {
+                  "lon": "-0.496632",
+                  "lat": "44.92874"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "181400",
+              "base_departure_time": "181500",
+              "amended_arrival_time": "181900",
+              "amended_departure_time": "182000",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87581850:Train",
+                "name": "Bassens",
+                "label": "Bassens (Bassens)",
+                "coord": {
+                  "lon": "-0.522282",
+                  "lat": "44.901307"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "181800",
+              "base_departure_time": "181900",
+              "amended_arrival_time": "182300",
+              "amended_departure_time": "182400",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87581595:Train",
+                "name": "Cenon",
+                "label": "Cenon (Cenon)",
+                "coord": {
+                  "lon": "-0.533649",
+                  "lat": "44.856347"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "182300",
+              "base_departure_time": "182400",
+              "amended_arrival_time": "182800",
+              "amended_departure_time": "182900",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87581009:Train",
+                "name": "Bordeaux Saint-Jean",
+                "label": "Bordeaux Saint-Jean (Bordeaux)",
+                "coord": {
+                  "lon": "-0.556697",
+                  "lat": "44.825873"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "182800",
+              "base_departure_time": "183300",
+              "amended_arrival_time": "183300",
+              "amended_departure_time": "185800",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87748350:Train",
+                "name": "Talence Médoquine",
+                "label": "Talence Médoquine (Talence)",
+                "coord": {
+                  "lon": "-0.599919",
+                  "lat": "44.800029"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "183600",
+              "base_departure_time": "183700",
+              "amended_arrival_time": "190100",
+              "amended_departure_time": "190200",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87581751:Train",
+                "name": "Pessac",
+                "label": "Pessac (Pessac)",
+                "coord": {
+                  "lon": "-0.631784",
+                  "lat": "44.804621"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "184000",
+              "base_departure_time": "184100",
+              "amended_arrival_time": "190500",
+              "amended_departure_time": "190600",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87581793:Train",
+                "name": "Pessac Alouette",
+                "label": "Pessac Alouette (Pessac)",
+                "coord": {
+                  "lon": "-0.65946",
+                  "lat": "44.793462"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "184300",
+              "base_departure_time": "184400",
+              "amended_arrival_time": "190800",
+              "amended_departure_time": "190900",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582403:Train",
+                "name": "Gazinet - Cestas",
+                "label": "Gazinet - Cestas (Cestas)",
+                "coord": {
+                  "lon": "-0.699448",
+                  "lat": "44.772247"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "184700",
+              "base_departure_time": "184800",
+              "amended_arrival_time": "191200",
+              "amended_departure_time": "191300",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582445:Train",
+                "name": "Marcheprime",
+                "label": "Marcheprime (Marcheprime)",
+                "coord": {
+                  "lon": "-0.853726",
+                  "lat": "44.690532"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "185600",
+              "base_departure_time": "185700",
+              "amended_arrival_time": "192100",
+              "amended_departure_time": "192200",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582478:Train",
+                "name": "Biganos Facture",
+                "label": "Biganos Facture (Biganos)",
+                "coord": {
+                  "lon": "-0.96621",
+                  "lat": "44.637384"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "190300",
+              "base_departure_time": "190400",
+              "amended_arrival_time": "192800",
+              "amended_departure_time": "192900",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582601:Train",
+                "name": "Le Teich",
+                "label": "Le Teich (Le Teich)",
+                "coord": {
+                  "lon": "-1.025564",
+                  "lat": "44.63248"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "190800",
+              "base_departure_time": "190900",
+              "amended_arrival_time": "193300",
+              "amended_departure_time": "193400",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582619:Train",
+                "name": "Gujan-Mestras",
+                "label": "Gujan-Mestras (Gujan-Mestras)",
+                "coord": {
+                  "lon": "-1.069075",
+                  "lat": "44.640514"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "191300",
+              "base_departure_time": "191400",
+              "amended_arrival_time": "193800",
+              "amended_departure_time": "193900",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582635:Train",
+                "name": "La Hume",
+                "label": "La Hume (Gujan-Mestras)",
+                "coord": {
+                  "lon": "-1.116043",
+                  "lat": "44.639914"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "191700",
+              "base_departure_time": "191800",
+              "amended_arrival_time": "194200",
+              "amended_departure_time": "194300",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582643:Train",
+                "name": "La Teste",
+                "label": "La Teste (La Teste-de-Buch)",
+                "coord": {
+                  "lon": "-1.14297",
+                  "lat": "44.636966"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "192000",
+              "base_departure_time": "192100",
+              "amended_arrival_time": "194500",
+              "amended_departure_time": "194600",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87582668:Train",
+                "name": "Arcachon",
+                "label": "Arcachon (Arcachon)",
+                "coord": {
+                  "lon": "-1.165323",
+                  "lat": "44.658967"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "192500",
+              "base_departure_time": "192500",
+              "amended_arrival_time": "195000",
+              "amended_departure_time": "195000",
+              "cause": "Difficulté de gestion du trafic sur le réseau ferré",
+              "stop_time_effect": "delayed",
+              "departure_status": "unchanged",
+              "arrival_status": "delayed",
+              "is_detour": false
+            }
+          ]
+        }
+      ],
+      "uri": "f97bb796-3a87-4314-a8a9-779f9dea9776",
+      "disruption_uri": "f97bb796-3a87-4314-a8a9-779f9dea9776",
+      "contributor": "realtime.sncf.piv"
+    }
+  ],
+  "origins": [
+    {
+      "id": "stop_area:SNCF:87581009",
+      "name": "Bordeaux Saint-Jean",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87581009"
+        },
+        {
+          "type": "uic",
+          "value": "87581009"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Bordeaux Saint-Jean (Bordeaux)",
+      "coord": {
+        "lon": "-0.556697",
+        "lat": "44.825873"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87584052",
+      "name": "Libourne",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87584052"
+        },
+        {
+          "type": "uic",
+          "value": "87584052"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Libourne (Libourne)",
+      "coord": {
+        "lon": "-0.236359",
+        "lat": "44.915904"
+      },
+      "links": []
+    }
+  ],
+  "terminus": [
+    {
+      "id": "stop_area:SNCF:87586008",
+      "name": "Agen",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87586008"
+        },
+        {
+          "type": "uic",
+          "value": "87586008"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Agen (Agen)",
+      "coord": {
+        "lon": "0.6208669999999999",
+        "lat": "44.207967"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87583005",
+      "name": "Angoulême",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87583005"
+        },
+        {
+          "type": "uic",
+          "value": "87583005"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Angoulême (Angoulême)",
+      "coord": {
+        "lon": "0.164608",
+        "lat": "45.653572"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87582668",
+      "name": "Arcachon",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87582668"
+        },
+        {
+          "type": "uic",
+          "value": "87582668"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Arcachon (Arcachon)",
+      "coord": {
+        "lon": "-1.165323",
+        "lat": "44.658967"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87584268",
+      "name": "Bergerac",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87584268"
+        },
+        {
+          "type": "uic",
+          "value": "87584268"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Bergerac (Bergerac)",
+      "coord": {
+        "lon": "0.489174",
+        "lat": "44.857061"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87581009",
+      "name": "Bordeaux Saint-Jean",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87581009"
+        },
+        {
+          "type": "uic",
+          "value": "87581009"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Bordeaux Saint-Jean (Bordeaux)",
+      "coord": {
+        "lon": "-0.556697",
+        "lat": "44.825873"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87594002",
+      "name": "Brive-la-Gaillarde",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87594002"
+        },
+        {
+          "type": "uic",
+          "value": "87594002"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Brive-la-Gaillarde (Brive-la-Gaillarde)",
+      "coord": {
+        "lon": "1.528634",
+        "lat": "45.152601"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87677005",
+      "name": "Hendaye",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87677005"
+        },
+        {
+          "type": "uic",
+          "value": "87677005"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Hendaye (Hendaye)",
+      "coord": {
+        "lon": "-1.781724",
+        "lat": "43.353132"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87485003",
+      "name": "La Rochelle",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87485003"
+        },
+        {
+          "type": "uic",
+          "value": "87485003"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "La Rochelle (La Rochelle)",
+      "coord": {
+        "lon": "-1.145853",
+        "lat": "46.152705"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87581389",
+      "name": "Le Verdon",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87581389"
+        },
+        {
+          "type": "uic",
+          "value": "87581389"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Le Verdon (Le Verdon-sur-Mer)",
+      "coord": {
+        "lon": "-1.065119",
+        "lat": "45.549229"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87592006",
+      "name": "Limoges Bénédictins",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87592006"
+        },
+        {
+          "type": "uic",
+          "value": "87592006"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Limoges Bénédictins (Limoges)",
+      "coord": {
+        "lon": "1.267419",
+        "lat": "45.836207"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87581199",
+      "name": "Macau",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87581199"
+        },
+        {
+          "type": "uic",
+          "value": "87581199"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Macau (Macau)",
+      "coord": {
+        "lon": "-0.619859",
+        "lat": "45.004171"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87586545",
+      "name": "Marmande",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87586545"
+        },
+        {
+          "type": "uic",
+          "value": "87586545"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Marmande (Marmande)",
+      "coord": {
+        "lon": "0.168091",
+        "lat": "44.503071"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87751008",
+      "name": "Marseille Saint-Charles",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87751008"
+        },
+        {
+          "type": "uic",
+          "value": "87751008"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Marseille Saint-Charles (Marseille)",
+      "coord": {
+        "lon": "5.380407",
+        "lat": "43.302666"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87671016",
+      "name": "Mont-de-Marsan",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87671016"
+        },
+        {
+          "type": "uic",
+          "value": "87671016"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Mont-de-Marsan (Mont-de-Marsan)",
+      "coord": {
+        "lon": "-0.50466",
+        "lat": "43.884898"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87481002",
+      "name": "Nantes",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87481002"
+        },
+        {
+          "type": "uic",
+          "value": "87481002"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Nantes (Nantes)",
+      "coord": {
+        "lon": "-1.542077",
+        "lat": "47.217491"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87775007",
+      "name": "Nîmes Centre",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87775007"
+        },
+        {
+          "type": "uic",
+          "value": "87775007"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Nîmes Centre (Nîmes)",
+      "coord": {
+        "lon": "4.365872",
+        "lat": "43.832313"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87391003",
+      "name": "Paris - Montparnasse - Hall 1 & 2",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87391003"
+        },
+        {
+          "type": "uic",
+          "value": "87391003"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Paris - Montparnasse - Hall 1 & 2 (Paris)",
+      "coord": {
+        "lon": "2.320514",
+        "lat": "48.841172"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87672006",
+      "name": "Pau",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87672006"
+        },
+        {
+          "type": "uic",
+          "value": "87672006"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Pau (Pau)",
+      "coord": {
+        "lon": "-0.369675",
+        "lat": "43.291711"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87595009",
+      "name": "Périgueux",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87595009"
+        },
+        {
+          "type": "uic",
+          "value": "87595009"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Périgueux (Périgueux)",
+      "coord": {
+        "lon": "0.707879",
+        "lat": "45.187408"
+      },
+      "links": []
+    },
+    {
+      "id": "stop_area:SNCF:87491001",
+      "name": "Saintes",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87491001"
+        },
+        {
+          "type": "uic",
+          "value": "87491001"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Saintes (Saintes)",
+      "coord": {
+        "lon": "-0.6179",
+        "lat": "45.74874"
+      },
+      "links": []
+    }
+  ],
+  "context": {
+    "current_datetime": "20260928T185121",
+    "timezone": "Europe/Paris"
+  },
+  "departures": [
+    {
+      "route": {
+        "id": "route:SNCF:FR:Line::3ebed947-d25a-4cb1-ad23-a6db52a6f082:",
+        "name": "L42",
+        "is_frequence": "False",
+        "direction_type": "forward",
+        "physical_modes": [
+          {
+            "id": "physical_mode:Coach",
+            "name": "Autocar"
+          },
+          {
+            "id": "physical_mode:Train",
+            "name": "TER / Intercités"
+          }
+        ],
+        "direction": {
+          "id": "stop_area:SNCF:87581009",
+          "name": "Bordeaux Saint-Jean (Bordeaux)",
+          "quality": 0,
+          "stop_area": {
+            "id": "stop_area:SNCF:87581009",
+            "name": "Bordeaux Saint-Jean",
+            "codes": [
+              {
+                "type": "source",
+                "value": "87581009"
+              },
+              {
+                "type": "uic",
+                "value": "87581009"
+              }
+            ],
+            "timezone": "Europe/Paris",
+            "label": "Bordeaux Saint-Jean (Bordeaux)",
+            "coord": {
+              "lon": "-0.556697",
+              "lat": "44.825873"
+            },
+            "links": []
+          },
+          "embedded_type": "stop_area"
+        },
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "links": [],
+        "line": {
+          "id": "line:SNCF:FR:Line::3ebed947-d25a-4cb1-ad23-a6db52a6f082:",
+          "name": "L42",
+          "code": "L42",
+          "color": "",
+          "text_color": "",
+          "codes": [],
+          "physical_modes": [
+            {
+              "id": "physical_mode:Train",
+              "name": "TER / Intercités"
+            },
+            {
+              "id": "physical_mode:Coach",
+              "name": "Autocar"
+            }
+          ],
+          "commercial_mode": {
+            "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA"
+          },
+          "network": {
+            "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA",
+            "links": []
+          },
+          "opening_time": "053700",
+          "closing_time": "220600",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "links": []
+        }
+      },
+      "stop_point": {
+        "id": "stop_point:SNCF:87581009:Train",
+        "name": "Bordeaux Saint-Jean",
+        "label": "Bordeaux Saint-Jean (Bordeaux)",
+        "coord": {
+          "lon": "-0.556697",
+          "lat": "44.825873"
+        },
+        "links": [],
+        "commercial_modes": [
+          {
+            "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA"
+          }
+        ],
+        "physical_modes": [
+          {
+            "id": "physical_mode:Train",
+            "name": "TER / Intercités",
+            "co2_emission_rate": {
+              "value": 11.9,
+              "unit": "gEC/Km"
+            }
+          }
+        ],
+        "administrative_regions": [
+          {
+            "id": "admin:fr:33063",
+            "name": "Bordeaux",
+            "level": 8,
+            "zip_code": "33000;33800",
+            "label": "Bordeaux (33000-33800)",
+            "insee": "33063",
+            "coord": {
+              "lon": "-0.5800364",
+              "lat": "44.841225"
+            }
+          }
+        ],
+        "stop_area": {
+          "id": "stop_area:SNCF:87581009",
+          "name": "Bordeaux Saint-Jean",
+          "codes": [
+            {
+              "type": "source",
+              "value": "87581009"
+            },
+            {
+              "type": "uic",
+              "value": "87581009"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "label": "Bordeaux Saint-Jean (Bordeaux)",
+          "coord": {
+            "lon": "-0.556697",
+            "lat": "44.825873"
+          },
+          "links": [],
+          "administrative_regions": [
+            {
+              "id": "admin:fr:33063",
+              "name": "Bordeaux",
+              "level": 8,
+              "zip_code": "33000;33800",
+              "label": "Bordeaux (33000-33800)",
+              "insee": "33063",
+              "coord": {
+                "lon": "-0.5800364",
+                "lat": "44.841225"
+              }
+            }
+          ]
+        },
+        "equipments": []
+      },
+      "stop_date_time": {
+        "arrival_date_time": "20260928T185300",
+        "base_arrival_date_time": "20260928T185300",
+        "additional_informations": [],
+        "links": [
+          {
+            "type": "stop_area",
+            "rel": "origins",
+            "category": "origin",
+            "id": "stop_area:SNCF:87581009",
+            "internal": true
+          },
+          {
+            "type": "stop_area",
+            "rel": "terminus",
+            "category": "terminus",
+            "id": "stop_area:SNCF:87581389",
+            "internal": true
+          }
+        ],
+        "data_freshness": "base_schedule"
+      },
+      "display_informations": {
+        "commercial_mode": "TER NA",
+        "network": "TER NA",
+        "direction": "Le Verdon (Le Verdon-sur-Mer)",
+        "label": "L42",
+        "color": "",
+        "code": "L42",
+        "headsign": "866153",
+        "name": "L42",
+        "links": [
+          {
+            "templated": false,
+            "rel": "origins",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:SNCF:87581009",
+            "category": "origin"
+          },
+          {
+            "templated": false,
+            "rel": "terminus",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:SNCF:87581389",
+            "category": "terminus"
+          }
+        ],
+        "text_color": "",
+        "trip_short_name": "866153",
+        "company": "SNCF Voyageurs",
+        "description": "",
+        "physical_mode": "TER / Intercités",
+        "equipments": []
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:SNCF:FR:Line::3ebed947-d25a-4cb1-ad23-a6db52a6f082:"
+        },
+        {
+          "type": "company",
+          "id": "company:SNCF:1187"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2026-09-28:866153:1187:Train"
+        },
+        {
+          "type": "route",
+          "id": "route:SNCF:FR:Line::3ebed947-d25a-4cb1-ad23-a6db52a6f082:"
+        },
+        {
+          "type": "commercial_mode",
+          "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:"
+        },
+        {
+          "type": "physical_mode",
+          "id": "physical_mode:Train"
+        },
+        {
+          "type": "network",
+          "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:"
+        }
+      ]
+    },
+    {
+      "route": {
+        "id": "route:SNCF:FR:Line::1f093b3e-6e5a-4365-9cd0-e5764b2c7767:",
+        "name": "L51",
+        "is_frequence": "False",
+        "direction_type": "forward",
+        "physical_modes": [
+          {
+            "id": "physical_mode:Coach",
+            "name": "Autocar"
+          },
+          {
+            "id": "physical_mode:Train",
+            "name": "TER / Intercités"
+          }
+        ],
+        "direction": {
+          "id": "stop_area:SNCF:87677005",
+          "name": "Hendaye (Hendaye)",
+          "quality": 0,
+          "stop_area": {
+            "id": "stop_area:SNCF:87677005",
+            "name": "Hendaye",
+            "codes": [
+              {
+                "type": "source",
+                "value": "87677005"
+              },
+              {
+                "type": "uic",
+                "value": "87677005"
+              }
+            ],
+            "timezone": "Europe/Paris",
+            "label": "Hendaye (Hendaye)",
+            "coord": {
+              "lon": "-1.781724",
+              "lat": "43.353132"
+            },
+            "links": []
+          },
+          "embedded_type": "stop_area"
+        },
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "links": [],
+        "line": {
+          "id": "line:SNCF:FR:Line::1f093b3e-6e5a-4365-9cd0-e5764b2c7767:",
+          "name": "L51",
+          "code": "L51",
+          "color": "",
+          "text_color": "",
+          "codes": [],
+          "physical_modes": [
+            {
+              "id": "physical_mode:Train",
+              "name": "TER / Intercités"
+            },
+            {
+              "id": "physical_mode:Coach",
+              "name": "Autocar"
+            }
+          ],
+          "commercial_mode": {
+            "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA"
+          },
+          "network": {
+            "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA",
+            "links": []
+          },
+          "opening_time": "044400",
+          "closing_time": "221700",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "links": []
+        }
+      },
+      "stop_point": {
+        "id": "stop_point:SNCF:87581009:Train",
+        "name": "Bordeaux Saint-Jean",
+        "label": "Bordeaux Saint-Jean (Bordeaux)",
+        "coord": {
+          "lon": "-0.556697",
+          "lat": "44.825873"
+        },
+        "links": [],
+        "commercial_modes": [
+          {
+            "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA"
+          }
+        ],
+        "physical_modes": [
+          {
+            "id": "physical_mode:Train",
+            "name": "TER / Intercités",
+            "co2_emission_rate": {
+              "value": 11.9,
+              "unit": "gEC/Km"
+            }
+          }
+        ],
+        "administrative_regions": [
+          {
+            "id": "admin:fr:33063",
+            "name": "Bordeaux",
+            "level": 8,
+            "zip_code": "33000;33800",
+            "label": "Bordeaux (33000-33800)",
+            "insee": "33063",
+            "coord": {
+              "lon": "-0.5800364",
+              "lat": "44.841225"
+            }
+          }
+        ],
+        "stop_area": {
+          "id": "stop_area:SNCF:87581009",
+          "name": "Bordeaux Saint-Jean",
+          "codes": [
+            {
+              "type": "source",
+              "value": "87581009"
+            },
+            {
+              "type": "uic",
+              "value": "87581009"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "label": "Bordeaux Saint-Jean (Bordeaux)",
+          "coord": {
+            "lon": "-0.556697",
+            "lat": "44.825873"
+          },
+          "links": [],
+          "administrative_regions": [
+            {
+              "id": "admin:fr:33063",
+              "name": "Bordeaux",
+              "level": 8,
+              "zip_code": "33000;33800",
+              "label": "Bordeaux (33000-33800)",
+              "insee": "33063",
+              "coord": {
+                "lon": "-0.5800364",
+                "lat": "44.841225"
+              }
+            }
+          ]
+        },
+        "equipments": []
+      },
+      "stop_date_time": {
+        "departure_date_time": "20260928T185400",
+        "base_departure_date_time": "20260928T184400",
+        "arrival_date_time": "20260928T185400",
+        "base_arrival_date_time": "20260928T184400",
+        "additional_informations": [],
+        "links": [
+          {
+            "type": "stop_area",
+            "rel": "origins",
+            "category": "origin",
+            "id": "stop_area:SNCF:87581009",
+            "internal": true
+          },
+          {
+            "type": "stop_area",
+            "rel": "terminus",
+            "category": "terminus",
+            "id": "stop_area:SNCF:87677005",
+            "internal": true
+          }
+        ],
+        "data_freshness": "realtime"
+      },
+      "display_informations": {
+        "commercial_mode": "TER NA",
+        "network": "TER NA",
+        "direction": "Hendaye (Hendaye)",
+        "label": "L51",
+        "color": "",
+        "code": "L51",
+        "name": "L51",
+        "links": [
+          {
+            "templated": false,
+            "rel": "disruptions",
+            "internal": true,
+            "type": "disruption",
+            "id": "38db32fe-28e9-432a-b7f3-7ec2b6daaf9c"
+          },
+          {
+            "templated": false,
+            "rel": "origins",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:SNCF:87581009",
+            "category": "origin"
+          },
+          {
+            "templated": false,
+            "rel": "terminus",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:SNCF:87677005",
+            "category": "terminus"
+          }
+        ],
+        "text_color": "",
+        "trip_short_name": "866463",
+        "company": "SNCF Voyageurs",
+        "description": "",
+        "physical_mode": "TER / Intercités",
+        "equipments": []
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:SNCF:FR:Line::1f093b3e-6e5a-4365-9cd0-e5764b2c7767:"
+        },
+        {
+          "type": "company",
+          "id": "company:SNCF:1187"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2026-09-28:866463:1187:Train:RealTime:9c4319a1-96a1-48a2-a580-806ae1598bbc"
+        },
+        {
+          "type": "route",
+          "id": "route:SNCF:FR:Line::1f093b3e-6e5a-4365-9cd0-e5764b2c7767:"
+        },
+        {
+          "type": "commercial_mode",
+          "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:"
+        },
+        {
+          "type": "physical_mode",
+          "id": "physical_mode:Train"
+        },
+        {
+          "type": "network",
+          "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:"
+        }
+      ]
+    },
+    {
+      "route": {
+        "id": "route:SNCF:FR:Line::e3a8a728-7448-4d91-ab56-5d415d6969f2:",
+        "name": "L44",
+        "is_frequence": "False",
+        "direction_type": "forward",
+        "physical_modes": [
+          {
+            "id": "physical_mode:Coach",
+            "name": "Autocar"
+          },
+          {
+            "id": "physical_mode:Train",
+            "name": "TER / Intercités"
+          }
+        ],
+        "direction": {
+          "id": "stop_area:SNCF:87586545",
+          "name": "Marmande (Marmande)",
+          "quality": 0,
+          "stop_area": {
+            "id": "stop_area:SNCF:87586545",
+            "name": "Marmande",
+            "codes": [
+              {
+                "type": "source",
+                "value": "87586545"
+              },
+              {
+                "type": "uic",
+                "value": "87586545"
+              }
+            ],
+            "timezone": "Europe/Paris",
+            "label": "Marmande (Marmande)",
+            "coord": {
+              "lon": "0.168091",
+              "lat": "44.503071"
+            },
+            "links": []
+          },
+          "embedded_type": "stop_area"
+        },
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "links": [],
+        "line": {
+          "id": "line:SNCF:FR:Line::e3a8a728-7448-4d91-ab56-5d415d6969f2:",
+          "name": "L44",
+          "code": "L44",
+          "color": "",
+          "text_color": "",
+          "codes": [],
+          "physical_modes": [
+            {
+              "id": "physical_mode:Coach",
+              "name": "Autocar"
+            },
+            {
+              "id": "physical_mode:Train",
+              "name": "TER / Intercités"
+            }
+          ],
+          "commercial_mode": {
+            "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA"
+          },
+          "network": {
+            "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA",
+            "links": []
+          },
+          "opening_time": "061500",
+          "closing_time": "211500",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "links": []
+        }
+      },
+      "stop_point": {
+        "id": "stop_point:SNCF:87581009:Train",
+        "name": "Bordeaux Saint-Jean",
+        "label": "Bordeaux Saint-Jean (Bordeaux)",
+        "coord": {
+          "lon": "-0.556697",
+          "lat": "44.825873"
+        },
+        "links": [],
+        "commercial_modes": [
+          {
+            "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA"
+          }
+        ],
+        "physical_modes": [
+          {
+            "id": "physical_mode:Train",
+            "name": "TER / Intercités",
+            "co2_emission_rate": {
+              "value": 11.9,
+              "unit": "gEC/Km"
+            }
+          }
+        ],
+        "administrative_regions": [
+          {
+            "id": "admin:fr:33063",
+            "name": "Bordeaux",
+            "level": 8,
+            "zip_code": "33000;33800",
+            "label": "Bordeaux (33000-33800)",
+            "insee": "33063",
+            "coord": {
+              "lon": "-0.5800364",
+              "lat": "44.841225"
+            }
+          }
+        ],
+        "stop_area": {
+          "id": "stop_area:SNCF:87581009",
+          "name": "Bordeaux Saint-Jean",
+          "codes": [
+            {
+              "type": "source",
+              "value": "87581009"
+            },
+            {
+              "type": "uic",
+              "value": "87581009"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "label": "Bordeaux Saint-Jean (Bordeaux)",
+          "coord": {
+            "lon": "-0.556697",
+            "lat": "44.825873"
+          },
+          "links": [],
+          "administrative_regions": [
+            {
+              "id": "admin:fr:33063",
+              "name": "Bordeaux",
+              "level": 8,
+              "zip_code": "33000;33800",
+              "label": "Bordeaux (33000-33800)",
+              "insee": "33063",
+              "coord": {
+                "lon": "-0.5800364",
+                "lat": "44.841225"
+              }
+            }
+          ]
+        },
+        "equipments": []
+      },
+      "stop_date_time": {
+        "departure_date_time": "20260928T185700",
+        "base_departure_date_time": "20260928T185700",
+        "arrival_date_time": "20260928T185700",
+        "base_arrival_date_time": "20260928T185700",
+        "additional_informations": [],
+        "links": [
+          {
+            "type": "stop_area",
+            "rel": "origins",
+            "category": "origin",
+            "id": "stop_area:SNCF:87581009",
+            "internal": true
+          },
+          {
+            "type": "stop_area",
+            "rel": "terminus",
+            "category": "terminus",
+            "id": "stop_area:SNCF:87586545",
+            "internal": true
+          }
+        ],
+        "data_freshness": "base_schedule"
+      },
+      "display_informations": {
+        "commercial_mode": "TER NA",
+        "network": "TER NA",
+        "label": "L44",
+        "color": "",
+        "code": "L44",
+        "headsign": "866875",
+        "name": "L44",
+        "links": [
+          {
+            "templated": false,
+            "rel": "origins",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:SNCF:87581009",
+            "category": "origin"
+          },
+          {
+            "templated": false,
+            "rel": "terminus",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:SNCF:87586545",
+            "category": "terminus"
+          }
+        ],
+        "text_color": "",
+        "trip_short_name": "866875",
+        "company": "SNCF Voyageurs",
+        "description": "",
+        "physical_mode": "TER / Intercités",
+        "equipments": []
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:SNCF:FR:Line::e3a8a728-7448-4d91-ab56-5d415d6969f2:"
+        },
+        {
+          "type": "company",
+          "id": "company:SNCF:1187"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2026-09-28:866875:1187:Train"
+        },
+        {
+          "type": "route",
+          "id": "route:SNCF:FR:Line::e3a8a728-7448-4d91-ab56-5d415d6969f2:"
+        },
+        {
+          "type": "commercial_mode",
+          "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:"
+        },
+        {
+          "type": "physical_mode",
+          "id": "physical_mode:Train"
+        },
+        {
+          "type": "network",
+          "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:"
+        }
+      ]
+    },
+    {
+      "route": {
+        "id": "route:SNCF:FR:Line::6831fb72-94d3-417c-915f-b9656db78b1a:",
+        "name": "F41+",
+        "is_frequence": "False",
+        "direction_type": "forward",
+        "physical_modes": [
+          {
+            "id": "physical_mode:Coach",
+            "name": "Autocar"
+          },
+          {
+            "id": "physical_mode:Train",
+            "name": "TER / Intercités"
+          }
+        ],
+        "direction": {
+          "id": "stop_area:SNCF:87582668",
+          "name": "Arcachon (Arcachon)",
+          "quality": 0,
+          "stop_area": {
+            "id": "stop_area:SNCF:87582668",
+            "name": "Arcachon",
+            "codes": [
+              {
+                "type": "source",
+                "value": "87582668"
+              },
+              {
+                "type": "uic",
+                "value": "87582668"
+              }
+            ],
+            "timezone": "Europe/Paris",
+            "label": "Arcachon (Arcachon)",
+            "coord": {
+              "lon": "-1.165323",
+              "lat": "44.658967"
+            },
+            "links": []
+          },
+          "embedded_type": "stop_area"
+        },
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "links": [],
+        "line": {
+          "id": "line:SNCF:FR:Line::6831fb72-94d3-417c-915f-b9656db78b1a:",
+          "name": "F41+",
+          "code": "F41+",
+          "color": "",
+          "text_color": "",
+          "codes": [],
+          "physical_modes": [
+            {
+              "id": "physical_mode:Train",
+              "name": "TER / Intercités"
+            },
+            {
+              "id": "physical_mode:Coach",
+              "name": "Autocar"
+            }
+          ],
+          "commercial_mode": {
+            "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA"
+          },
+          "network": {
+            "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA",
+            "links": []
+          },
+          "opening_time": "053500",
+          "closing_time": "232600",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "links": []
+        }
+      },
+      "stop_point": {
+        "id": "stop_point:SNCF:87581009:Train",
+        "name": "Bordeaux Saint-Jean",
+        "label": "Bordeaux Saint-Jean (Bordeaux)",
+        "coord": {
+          "lon": "-0.556697",
+          "lat": "44.825873"
+        },
+        "links": [],
+        "commercial_modes": [
+          {
+            "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:",
+            "name": "TER NA"
+          }
+        ],
+        "physical_modes": [
+          {
+            "id": "physical_mode:Train",
+            "name": "TER / Intercités",
+            "co2_emission_rate": {
+              "value": 11.9,
+              "unit": "gEC/Km"
+            }
+          }
+        ],
+        "administrative_regions": [
+          {
+            "id": "admin:fr:33063",
+            "name": "Bordeaux",
+            "level": 8,
+            "zip_code": "33000;33800",
+            "label": "Bordeaux (33000-33800)",
+            "insee": "33063",
+            "coord": {
+              "lon": "-0.5800364",
+              "lat": "44.841225"
+            }
+          }
+        ],
+        "stop_area": {
+          "id": "stop_area:SNCF:87581009",
+          "name": "Bordeaux Saint-Jean",
+          "codes": [
+            {
+              "type": "source",
+              "value": "87581009"
+            },
+            {
+              "type": "uic",
+              "value": "87581009"
+            }
+          ],
+          "timezone": "Europe/Paris",
+          "label": "Bordeaux Saint-Jean (Bordeaux)",
+          "coord": {
+            "lon": "-0.556697",
+            "lat": "44.825873"
+          },
+          "links": [],
+          "administrative_regions": [
+            {
+              "id": "admin:fr:33063",
+              "name": "Bordeaux",
+              "level": 8,
+              "zip_code": "33000;33800",
+              "label": "Bordeaux (33000-33800)",
+              "insee": "33063",
+              "coord": {
+                "lon": "-0.5800364",
+                "lat": "44.841225"
+              }
+            }
+          ]
+        },
+        "equipments": []
+      },
+      "stop_date_time": {
+        "departure_date_time": "20260928T185800",
+        "base_departure_date_time": "20260928T183300",
+        "arrival_date_time": "20260928T183300",
+        "base_arrival_date_time": "20260928T182800",
+        "additional_informations": [],
+        "links": [
+          {
+            "type": "stop_area",
+            "rel": "origins",
+            "category": "origin",
+            "id": "stop_area:SNCF:87584052",
+            "internal": true
+          },
+          {
+            "type": "stop_area",
+            "rel": "terminus",
+            "category": "terminus",
+            "id": "stop_area:SNCF:87582668",
+            "internal": true
+          }
+        ],
+        "data_freshness": "realtime"
+      },
+      "display_informations": {
+        "network": "TER NA",
+        "direction": "Arcachon (Arcachon)",
+        "label": "F41+",
+        "color": "",
+        "code": "F41+",
+        "headsign": "866251",
+        "name": "F41+",
+        "links": [
+          {
+            "templated": false,
+            "rel": "disruptions",
+            "internal": true,
+            "type": "disruption",
+            "id": "f97bb796-3a87-4314-a8a9-779f9dea9776"
+          },
+          {
+            "templated": false,
+            "rel": "origins",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:SNCF:87584052",
+            "category": "origin"
+          },
+          {
+            "templated": false,
+            "rel": "terminus",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:SNCF:87582668",
+            "category": "terminus"
+          }
+        ],
+        "text_color": "",
+        "trip_short_name": "866251",
+        "company": "SNCF Voyageurs",
+        "description": "",
+        "physical_mode": "TER / Intercités",
+        "equipments": []
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:SNCF:FR:Line::6831fb72-94d3-417c-915f-b9656db78b1a:"
+        },
+        {
+          "type": "company",
+          "id": "company:SNCF:1187"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:SNCF:2026-09-28:866251:1187:Train:RealTime:a082a695-4331-4bf4-9c0d-e91aff3fc2f9"
+        },
+        {
+          "type": "route",
+          "id": "route:SNCF:FR:Line::6831fb72-94d3-417c-915f-b9656db78b1a:"
+        },
+        {
+          "type": "commercial_mode",
+          "id": "commercial_mode:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:"
+        },
+        {
+          "type": "physical_mode",
+          "id": "physical_mode:Train"
+        },
+        {
+          "type": "network",
+          "id": "network:SNCF:FR:Branding::5c5f14b9-bff2-4f94-8853-0f621bf1a1cf:"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_modes.id}",
+      "templated": true,
+      "rel": "commercial_modes",
+      "type": "commercial_modes"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+      "templated": true,
+      "rel": "commercial_modes",
+      "type": "commercial_mode"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+      "templated": true,
+      "rel": "stop_areas",
+      "type": "stop_area"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/routes/{route.id}",
+      "templated": true,
+      "rel": "routes",
+      "type": "route"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_mode.id}",
+      "templated": true,
+      "rel": "physical_modes",
+      "type": "physical_mode"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/disruptions/{disruption.id}",
+      "templated": true,
+      "rel": "disruptions",
+      "type": "disruption"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/disruptions/{disruptions.id}",
+      "templated": true,
+      "rel": "disruptions",
+      "type": "disruptions"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+      "templated": true,
+      "rel": "lines",
+      "type": "line"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/networks/{network.id}",
+      "templated": true,
+      "rel": "networks",
+      "type": "network"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/vehicle_journeys/{vehicle_journey.id}",
+      "templated": true,
+      "rel": "vehicle_journeys",
+      "type": "vehicle_journey"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/companies/{company.id}",
+      "templated": true,
+      "rel": "companies",
+      "type": "company"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/trips/{trip.id}",
+      "templated": true,
+      "rel": "trips",
+      "type": "trip"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/stop_points/{stop_point.id}",
+      "templated": true,
+      "rel": "stop_points",
+      "type": "stop_point"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+      "templated": true,
+      "rel": "physical_modes",
+      "type": "physical_modes"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:SNCF:87581009/departures?count=4&data_freshness=realtime",
+      "type": "first",
+      "templated": false
+    }
+  ],
+  "notes": [],
+  "exceptions": []
+}
